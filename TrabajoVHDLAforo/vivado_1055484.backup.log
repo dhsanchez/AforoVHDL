@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Jun 23 20:35:01 2022
+# Process ID: 1055484
+# Current directory: C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1055072 C:\Users\dsanc\OneDrive\Documentos\GitHub\AforoVHDL\TrabajoVHDLAforo\TrabajoVHDLAforo.xpr
+# Log file: C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo/vivado.log
+# Journal file: C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo/TrabajoVHDLAforo.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/dsanc/TrabajoVHDLAforo' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo/TrabajoVHDLAforo.gen/sources_1', nor could it be found using path 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.gen/sources_1'.
+WARNING: [Project 1-312] File not found as 'C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd'; using path 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd'; using path 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd'; using path 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TresEnRaya/Nexys-4-DDR-Master.xdc'; using path 'C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:42 ; elapsed = 00:00:18 . Memory (MB): peak = 1135.809 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivadexit
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 23 20:36:39 2022...

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Jun 25 17:14:43 2022
+# Process ID: 1486772
+# Current directory: C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1486428 C:\Users\dsanc\OneDrive\Documentos\GitHub\AforoVHDL\TrabajoVHDLAforo\TrabajoVHDLAforo.xpr
+# Log file: C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo/vivado.log
+# Journal file: C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo/TrabajoVHDLAforo.xpr
+update_compile_order -fileset sources_1

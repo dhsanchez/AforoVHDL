@@ -1,0 +1,454 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Jun 25 22:18:08 2022
+# Process ID: 1558996
+# Current directory: C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1
+# Command line: vivado.exe -log controlaforo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source controlaforo.tcl
+# Log file: C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1/controlaforo.vds
+# Journal file: C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source controlaforo.tcl -notrace
+Command: synth_design -top controlaforo -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1558764
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1134.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'controlaforo' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:62]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'EntradaSync' of component 'SYNCHRNZR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (1#1) [C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:12]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'SalidaSync' of component 'SYNCHRNZR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:178]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Botevacio1Sync' of component 'SYNCHRNZR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:183]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Botevacio2Sync' of component 'SYNCHRNZR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:188]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'ABOTE1Sync' of component 'SYNCHRNZR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:193]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'ABOTE2Sync' of component 'SYNCHRNZR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:198]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Rearme1Sync' of component 'SYNCHRNZR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:203]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Rearme2Sync' of component 'SYNCHRNZR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:208]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'CENsync' of component 'SYNCHRNZR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:213]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'EntradaEdge' of component 'EDGEDTCTR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:218]
+INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (2#1) [C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:12]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'SalidaEdge' of component 'EDGEDTCTR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:223]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'botevacio1Edge' of component 'EDGEDTCTR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:228]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'botevacio2Edge' of component 'EDGEDTCTR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:233]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'ABOTE1Edge' of component 'EDGEDTCTR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:238]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'ABOTE2Edge' of component 'EDGEDTCTR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:243]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'rearme1edge' of component 'EDGEDTCTR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:248]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'rearme2edge' of component 'EDGEDTCTR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:253]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'c_enedge' of component 'EDGEDTCTR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:258]
+INFO: [Synth 8-3491] module 'prescale' declared at 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/prescale.vhd:23' bound to instance 'preescaler_10khz' of component 'prescale' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:263]
+INFO: [Synth 8-638] synthesizing module 'prescale' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/prescale.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'prescale' (3#1) [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/prescale.vhd:32]
+INFO: [Synth 8-3491] module 'contador_aforo' declared at 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_aforo.vhd:27' bound to instance 'cuentaaforo' of component 'contador_aforo' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:271]
+INFO: [Synth 8-638] synthesizing module 'contador_aforo' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_aforo.vhd:44]
+WARNING: [Synth 8-614] signal 'FULL_i' is read in the process but is not in the sensitivity list [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_aforo.vhd:50]
+WARNING: [Synth 8-614] signal 'ERROR_i' is read in the process but is not in the sensitivity list [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_aforo.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'contador_aforo' (4#1) [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_aforo.vhd:44]
+INFO: [Synth 8-3491] module 'contador_bote' declared at 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd:34' bound to instance 'contadorbote1' of component 'contador_bote' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:283]
+INFO: [Synth 8-638] synthesizing module 'contador_bote' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd:43]
+WARNING: [Synth 8-614] signal 'REARME' is read in the process but is not in the sensitivity list [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'contador_bote' (5#1) [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd:43]
+INFO: [Synth 8-3491] module 'contador_bote' declared at 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd:34' bound to instance 'contadorbote2' of component 'contador_bote' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:290]
+INFO: [Synth 8-3491] module 'maquina_botes' declared at 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/maquina_botes.vhd:26' bound to instance 'maquinabote1' of component 'maquina_botes' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:297]
+INFO: [Synth 8-638] synthesizing module 'maquina_botes' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/maquina_botes.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'maquina_botes' (6#1) [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/maquina_botes.vhd:37]
+INFO: [Synth 8-3491] module 'maquina_botes' declared at 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/maquina_botes.vhd:26' bound to instance 'maquinabote2' of component 'maquina_botes' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:306]
+INFO: [Synth 8-3491] module 'control_display' declared at 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:34' bound to instance 'display' of component 'control_display' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:316]
+INFO: [Synth 8-638] synthesizing module 'control_display' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:48]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'declibre' of component 'decoder' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'decoder' [C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'decoder' (7#1) [C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:13]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'decocupado' of component 'decoder' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:78]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'decguion' of component 'decoder' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:82]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'decguion2' of component 'decoder' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:86]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'deccuenta1' of component 'decoder' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:90]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'deccuenta2' of component 'decoder' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:93]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'libres1' of component 'decoder' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:96]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'libres2' of component 'decoder' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:100]
+INFO: [Synth 8-256] done synthesizing module 'control_display' (8#1) [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'controlaforo' (9#1) [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:62]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1134.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1134.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1134.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1134.844 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'MAIN_SEG[0]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MAIN_SEG[1]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MAIN_SEG[2]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MAIN_SEG[3]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MAIN_SEG[4]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MAIN_SEG[5]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MAIN_SEG[6]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MAIN_SEG[7]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MAIN_AN[0]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MAIN_AN[1]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MAIN_AN[2]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MAIN_RESET'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[0]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[1]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[2]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[3]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[4]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[5]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[6]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[7]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[8]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o1[0]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o1[1]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o2[0]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o2[1]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o3[0]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o3[1]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o4[0]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o4[1]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o5[0]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o5[1]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o6[0]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o6[1]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o7[0]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o7[1]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o8[0]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o8[1]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o9[0]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'o9[1]'. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/controlaforo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/controlaforo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1166.297 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1166.297 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1166.297 ; gain = 31.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1166.297 ; gain = 31.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1166.297 ; gain = 31.453
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'maquina_botes'
+INFO: [Synth 8-802] inferred FSM for state register 'flag_reg' in module 'control_display'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                               00 |                               00
+                      s1 |                               01 |                               01
+                      s2 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'maquina_botes'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 | 00000000000000000000000000000001
+*
+                 iSTATE6 |                              001 | 00000000000000000000000000000010
+                 iSTATE5 |                              010 | 00000000000000000000000000000011
+                 iSTATE4 |                              011 | 00000000000000000000000000000100
+                 iSTATE3 |                              100 | 00000000000000000000000000000101
+                 iSTATE2 |                              101 | 00000000000000000000000000000110
+                 iSTATE1 |                              110 | 00000000000000000000000000000111
+                 iSTATE0 |                              111 | 00000000000000000000000000001000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'flag_reg' using encoding 'sequential' in module 'control_display'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1166.297 ; gain = 31.453
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'display/decguion' (decoder) to 'display/decguion2'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 9     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input   13 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 7     
+	   8 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   8 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 10    
+	   2 Input    1 Bit        Muxes := 14    
+	   3 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1166.297 ; gain = 31.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1166.297 ; gain = 31.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1166.297 ; gain = 31.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1166.297 ; gain = 31.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1166.297 ; gain = 31.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1166.297 ; gain = 31.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1166.297 ; gain = 31.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1166.297 ; gain = 31.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1166.297 ; gain = 31.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1166.297 ; gain = 31.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|controlaforo | EntradaEdge/sreg_reg[0]    | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|controlaforo | SalidaEdge/sreg_reg[0]     | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|controlaforo | botevacio1Edge/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|controlaforo | botevacio2Edge/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|controlaforo | ABOTE1Edge/sreg_reg[0]     | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|controlaforo | ABOTE2Edge/sreg_reg[0]     | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|controlaforo | rearme1edge/sreg_reg[0]    | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|controlaforo | rearme2edge/sreg_reg[0]    | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|controlaforo | c_enedge/sreg_reg[0]       | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
++-------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    19|
+|3     |LUT1   |     6|
+|4     |LUT2   |    12|
+|5     |LUT3   |    19|
+|6     |LUT4   |    18|
+|7     |LUT5   |    10|
+|8     |LUT6   |    63|
+|9     |MUXF7  |     1|
+|10    |SRL16E |     9|
+|11    |FDCE   |    90|
+|12    |FDRE   |    54|
+|13    |IBUF   |    15|
+|14    |OBUF   |    19|
+|15    |OBUFT  |     3|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1166.297 ; gain = 31.453
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 1166.297 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1166.297 ; gain = 31.453
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1166.297 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1176.371 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 8baee16c
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 42 Warnings, 39 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 1176.371 ; gain = 41.527
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1/controlaforo.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file controlaforo_utilization_synth.rpt -pb controlaforo_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 25 22:19:09 2022...

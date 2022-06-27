@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Jun 25 16:22:42 2022
+# Process ID: 1473688
+# Current directory: C:/Users/dsanc/TrabajoVHDLAforo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1473832 C:\Users\dsanc\TrabajoVHDLAforo\TrabajoVHDLAforo.xpr
+# Log file: C:/Users/dsanc/TrabajoVHDLAforo/vivado.log
+# Journal file: C:/Users/dsanc/TrabajoVHDLAforo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source cfg_tb_maquina_botes.tcl
+close_sim

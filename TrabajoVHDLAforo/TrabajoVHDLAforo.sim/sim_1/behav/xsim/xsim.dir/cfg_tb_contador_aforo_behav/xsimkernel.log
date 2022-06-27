@@ -1,0 +1,7 @@
+Running: xsim.dir/cfg_tb_contador_aforo_behav/xsimk.exe -simmode gui -wdb cfg_tb_contador_aforo_behav.wdb -simrunnum 0 -socket 57216
+Design successfully loaded
+Design Loading Memory Usage: 6716 KB (Peak: 6716 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 7292 KB (Peak: 7292 KB)
+Simulation CPU Usage: 78 ms

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Jun 25 17:43:37 2022
+# Process ID: 1493636
+# Current directory: C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim/xsim.dir/cfg_tb_maquina_botes_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim/xsim.dir/cfg_tb_maquina_botes_behav/webtalk/xsim_webtalk.tcl -notrace
