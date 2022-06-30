@@ -55,7 +55,6 @@ begin
    end if;
  end process;
  nextstateis: process(SENSOR,REARME,CONTADOR,current_state)
-
 begin
     next_state<= current_state;
     case current_state is 

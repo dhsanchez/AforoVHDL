@@ -1,0 +1,88 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Tue Jun 28 12:33:06 2022
+| Host         : LAPTOP-MVFJNUAM running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file controlaforo_control_sets_placed.rpt
+| Design       : controlaforo
+| Device       : xc7a100t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    10 |
+|    Minimum number of control sets                        |    10 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    31 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    10 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              54 |           30 |
+| No           | No                    | Yes                    |               4 |            2 |
+| No           | Yes                   | No                     |              14 |            4 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              72 |           19 |
+| Yes          | Yes                   | No                     |               1 |            1 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------+------------------------------------+------------------------------------+------------------+----------------+--------------+
+|   Clock Signal  |            Enable Signal           |          Set/Reset Signal          | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------+------------------------------------+------------------------------------+------------------+----------------+--------------+
+|  CLK_10kHz_BUFG | EntradaEdge/ERROR_i0               | SalidaEdge/sreg_reg[1]_0           |                1 |              1 |         1.00 |
+|  CLK_10kHz_BUFG |                                    | display/refrescar_anodo[7]_i_1_n_0 |                1 |              2 |         2.00 |
+|  CLK_10kHz_BUFG |                                    | RESET_IBUF                         |                2 |              4 |         2.00 |
+|  CLK_10kHz_BUFG | cuentaaforo/numero2                | RESET_IBUF                         |                1 |              4 |         4.00 |
+|  CLK_10kHz_BUFG | cuentaaforo/numero[3]_i_1_n_0      | RESET_IBUF                         |                2 |              4 |         2.00 |
+|  CLK_IBUF_BUFG  |                                    | preescaler_10khz/temporal          |                3 |             12 |         4.00 |
+|  CLK_10kHz_BUFG |                                    |                                    |                9 |             16 |         1.78 |
+|  CLK_10kHz_BUFG | contadorbote2/cuenta[0]_i_1__0_n_0 | rearme2edge/sreg_reg[1]_1          |                8 |             32 |         4.00 |
+|  CLK_10kHz_BUFG | ABOTE1Edge/sreg_reg[0]_0           | rearme1edge/sreg_reg[1]_0          |                8 |             32 |         4.00 |
+|  CLK_IBUF_BUFG  |                                    |                                    |               21 |             47 |         2.24 |
++-----------------+------------------------------------+------------------------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,995 @@
+/*
+
+Xilinx Vivado v2021.1 (64-bit) [Major: 2021, Minor: 1]
+SW Build: 3247384 on Thu Jun 10 19:36:33 MDT 2021
+IP Build: 3246043 on Fri Jun 11 00:30:35 MDT 2021
+
+Process ID (PID): 2127524
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue Jun 28 13:00:53 CEST 2022
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2021.1/tps/win64/jre11.0.2
+Java executable: 	C:/Xilinx/Vivado/2021.1/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	dsanc
+User home directory: C:/Users/dsanc
+User working directory: C:/Users/dsanc/TrabajoVHDLAforo
+User country: 	ES
+User language: 	es
+User locale: 	es_ES
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2021.1
+RDI_DATADIR: C:/Xilinx/Vivado/2021.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2021.1/bin
+
+Vivado preferences file: C:/Users/dsanc/AppData/Roaming/Xilinx/Vivado/2021.1/vivado.xml
+Vivado preferences directory: C:/Users/dsanc/AppData/Roaming/Xilinx/Vivado/2021.1/
+Vivado layouts directory: C:/Users/dsanc/AppData/Roaming/Xilinx/Vivado/2021.1/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2021.1/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/dsanc/TrabajoVHDLAforo/vivado.log
+Vivado journal file: 	C:/Users/dsanc/TrabajoVHDLAforo/vivado.jou
+Engine tmp dir: 	C:/Users/dsanc/TrabajoVHDLAforo/.Xil/Vivado-2127524-LAPTOP-MVFJNUAM
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2021.1
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2021.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2021.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2021.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,149 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\dsanc\TrabajoVHDLAforo\TrabajoVHDLAforo.xpr. Version: Vivado v2021.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 96 MB (+98525kb) [00:00:19]
+// [Engine Memory]: 1,149 MB (+1052994kb) [00:00:19]
+// [GUI Memory]: 120 MB (+20089kb) [00:00:20]
+// WARNING: HEventQueue.dispatchEvent() is taking  5152 ms.
+// Tcl Message: open_project C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 62 MB. Current time: 6/28/22, 1:00:59 PM CEST
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 1135.160 ; gain = 0.000 
+// Project name: TrabajoVHDLAforo; location: C:/Users/dsanc/TrabajoVHDLAforo; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, controlaforo(Behavioral) (controlaforo.vhd)]", 1); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, controlaforo(Behavioral) (controlaforo.vhd)]", 1); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 4); // D
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // o
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // an
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cs):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 134 MB (+7806kb) [00:00:48]
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'cfg_tb_controlaforo' INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'cfg_tb_controlaforo' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj cfg_tb_controlaforo_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_controlaforo_behav xil_defaultlib.cfg_tb_controlaforo -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Vivado Simulator v2021.1 Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_controlaforo_behav xil_defaultlib.cfg_tb_controlaforo -log elaborate.log  Using 2 slave threads. Starting static elaboration Completed static elaboration INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel 
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "cfg_tb_controlaforo_behav -key {Behavioral:sim_1:Functional:cfg_tb_controlaforo} -tclbatch {cfg_tb_controlaforo.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// WARNING: HEventQueue.dispatchEvent() is taking  1673 ms.
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Elapsed time: 10 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source cfg_tb_controlaforo.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 82 MB. Current time: 6/28/22, 1:01:36 PM CEST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'cfg_tb_controlaforo_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1135.160 ; gain = 0.000 
+// 'd' command handler elapsed time: 12 seconds
+dismissDialog("Run Simulation"); // e
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 81 MB. Current time: 6/28/22, 1:01:37 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 81 MB. Current time: 6/28/22, 1:01:38 PM CEST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 82 MB. Current time: 6/28/22, 1:01:39 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 81 MB. Current time: 6/28/22, 1:01:39 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTab((HResource) null, (HResource) null, "Sources", 1); // aK
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, cfg_tb_contador_aforo(tb_contador_aforo - tb) (contadortb.vhd)]", 6, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, cfg_tb_contador_aforo(tb_contador_aforo - tb) (contadortb.vhd)]", 6, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ak
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ak
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // an
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top cfg_tb_contador_aforo [get_filesets sim_1] 
+// bz (cs):  Set as Top : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top_lib xil_defaultlib [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Set as Top"); // bz
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // o
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // o
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // an
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cs):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'cfg_tb_contador_aforo' 
+// Tcl Message: boost::filesystem::remove: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: "C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim/simulate.log" 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: boost::filesystem::remove: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: "C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim/simulate.log" 
+// HOptionPane Error: 'boost::filesystem::remove: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: "C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/ sim_1/behav/xsim/simulate.log" (Run Simulation)'
+// 'd' command handler elapsed time: 3 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // o
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // an
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cs):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'cfg_tb_contador_aforo' 
+// Tcl Message: boost::filesystem::remove: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: "C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim/simulate.log" 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: boost::filesystem::remove: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: "C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim/simulate.log" 
+// HOptionPane Error: 'boost::filesystem::remove: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: "C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/ sim_1/behav/xsim/simulate.log" (Run Simulation)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - cfg_tb_controlaforo", "DesignTask.SIMULATION");
+// A (cs): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cs):  Close : addNotify
+// TclEventType: WAVEFORM_CLOSE_WCFG
+dismissDialog("Confirm Close"); // A
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// WARNING: HEventQueue.dispatchEvent() is taking  1365 ms.
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bz
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // o
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // an
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cs):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'cfg_tb_contador_aforo' INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'cfg_tb_contador_aforo' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj cfg_tb_contador_aforo_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_aforo_behav xil_defaultlib.cfg_tb_contador_aforo -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 6 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// a (cs): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // a
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-3290] entity port 'count' does not match with type positive of component port [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sim_1/new/contadortb.vhd:36]. ]", 6, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\dsanc\TrabajoVHDLAforo\TrabajoVHDLAforo.srcs\sim_1\new\contadortb.vhd;-;;-;16;-;line;-;36;-;;-;16;-;"); // ah
+// Elapsed time: 22 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, controlaforo(Behavioral) (controlaforo.vhd)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, controlaforo(Behavioral) (controlaforo.vhd), cuentaaforo : contador_aforo(Behavioral) (contador_aforo.vhd)]", 21, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, controlaforo(Behavioral) (controlaforo.vhd), cuentaaforo : contador_aforo(Behavioral) (contador_aforo.vhd)]", 21, false, false, false, false, false, true); // D - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contadortb.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contador_aforo.vhd", 2); // m
+selectCodeEditor("contador_aforo.vhd", 78, 56); // bP
+typeControlKey((HResource) null, "contador_aforo.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contadortb.vhd", 1); // m
+selectCodeEditor("contadortb.vhd", 99, 125); // bP
+typeControlKey((HResource) null, "contadortb.vhd", 'v'); // bP
+selectCodeEditor("contadortb.vhd", 100, 127); // bP
+selectCodeEditor("contadortb.vhd", 78, 147); // bP
+selectCodeEditor("contadortb.vhd", 342, 124); // bP
+selectCodeEditor("contadortb.vhd", 418, 112); // bP
+selectCodeEditor("contadortb.vhd", 346, 144); // bP
+selectCodeEditor("contadortb.vhd", 353, 142); // bP
+selectCodeEditor("contadortb.vhd", 350, 145); // bP
+selectCodeEditor("contadortb.vhd", 433, 165); // bP
+selectCodeEditor("contadortb.vhd", 181, 163); // bP
+selectCodeEditor("contadortb.vhd", 181, 163, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("contadortb.vhd", 147, 25); // bP
+typeControlKey((HResource) null, "contadortb.vhd", 'c'); // bP
+selectCodeEditor("contadortb.vhd", 181, 111); // bP
+selectCodeEditor("contadortb.vhd", 181, 111, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "contadortb.vhd", 'v'); // bP
+selectCodeEditor("contadortb.vhd", 398, 108); // bP
+typeControlKey((HResource) null, "contadortb.vhd", 'c'); // bP
+selectCodeEditor("contadortb.vhd", 410, 119); // bP
+selectCodeEditor("contadortb.vhd", 408, 104); // bP
+typeControlKey((HResource) null, "contadortb.vhd", 'v'); // bP
+selectCodeEditor("contadortb.vhd", 114, 127); // bP
+selectCodeEditor("contadortb.vhd", 322, 153); // bP
+selectCodeEditor("contadortb.vhd", 179, 111); // bP
+selectCodeEditor("contadortb.vhd", 182, 124); // bP
+selectCodeEditor("contadortb.vhd", 302, 153); // bP
+selectCodeEditor("contadortb.vhd", 220, 143); // bP
+// Elapsed time: 14 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // o
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // an
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // an
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cs):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'cfg_tb_contador_aforo' INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'cfg_tb_contador_aforo' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj cfg_tb_contador_aforo_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sim_1/new/contadortb.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'tb_contador_aforo' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_aforo_behav xil_defaultlib.cfg_tb_contador_aforo -log elaborate.log" 
+// Tcl Message: Built simulation snapshot cfg_tb_contador_aforo_behav 
+// Tcl Message:  ****** Webtalk v2021.1 (64-bit)   **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021   **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021     ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.  source C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim/xsim.dir/cfg_tb_contador_aforo_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim/xsim.dir/cfg_tb_contador_aforo_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Jun 28 13:05:08 2022. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2021.1/doc/webtalk_introduction.html. INFO: [Common 17-206] Exiting Webtalk at Tue Jun 28 13:05:08 2022... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1135.160 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "cfg_tb_contador_aforo_behav -key {Behavioral:sim_1:Functional:cfg_tb_contador_aforo} -tclbatch {cfg_tb_contador_aforo.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// [GUI Memory]: 142 MB (+1800kb) [00:04:33]
+// WARNING: HEventQueue.dispatchEvent() is taking  1098 ms.
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Tcl Message: Time resolution is 1 ps 
+// Elapsed time: 15 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 90 MB. Current time: 6/28/22, 1:05:11 PM CEST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// Tcl Message: source cfg_tb_contador_aforo.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'cfg_tb_contador_aforo_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1135.160 ; gain = 0.000 
+// 'd' command handler elapsed time: 16 seconds
+dismissDialog("Run Simulation"); // e
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, COUNT2[3:0]]", 4); // j
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 90 MB. Current time: 6/28/22, 1:05:24 PM CEST
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, COUNT2[3:0]]", 4); // j
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, COUNT2[3:0]]", 4, true); // j - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 91 MB. Current time: 6/28/22, 1:05:30 PM CEST
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 112 MB. Current time: 6/28/22, 1:05:32 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 91 MB. Current time: 6/28/22, 1:05:37 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 90 MB. Current time: 6/28/22, 1:05:40 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 90 MB. Current time: 6/28/22, 1:06:00 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 33 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contadortb.vhd", 0); // m
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 2", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contadortb.vhd", 0); // m
+selectCodeEditor("contadortb.vhd", 128, 128); // bP
+selectCodeEditor("contadortb.vhd", 231, 130); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // o
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // an
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// bz (cs):  Close : addNotify
+selectButton("OptionPane.button", "Yes"); // JButton
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1135.160 ; gain = 0.000 
+// e (cs):  Run Simulation : addNotify
+dismissDialog("Close"); // bz
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'cfg_tb_contador_aforo' INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'cfg_tb_contador_aforo' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj cfg_tb_contador_aforo_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sim_1/new/contadortb.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'tb_contador_aforo' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '3' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_aforo_behav xil_defaultlib.cfg_tb_contador_aforo -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot cfg_tb_contador_aforo_behav 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "cfg_tb_contador_aforo_behav -key {Behavioral:sim_1:Functional:cfg_tb_contador_aforo} -tclbatch {cfg_tb_contador_aforo.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 93 MB. Current time: 6/28/22, 1:07:09 PM CEST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source cfg_tb_contador_aforo.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'cfg_tb_contador_aforo_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1135.160 ; gain = 0.000 
+// 'd' command handler elapsed time: 18 seconds
+dismissDialog("Run Simulation"); // e
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 93 MB. Current time: 6/28/22, 1:07:18 PM CEST
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 94 MB. Current time: 6/28/22, 1:07:21 PM CEST
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 10 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 94 MB. Current time: 6/28/22, 1:07:22 PM CEST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 371, 216); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 399, 165); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 376, 216); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 94 MB. Current time: 6/28/22, 1:07:42 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contadortb.vhd", 0); // m
+selectCodeEditor("contadortb.vhd", 135, 125); // bP
+selectCodeEditor("contadortb.vhd", 303, 45); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // o
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // an
+// [GUI Memory]: 152 MB (+2483kb) [00:07:42]
+// Elapsed time: 19 seconds
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // an
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// bz (cs):  Close : addNotify
+selectButton("OptionPane.button", "Yes"); // JButton
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// e (cs):  Run Simulation : addNotify
+dismissDialog("Close"); // bz
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'cfg_tb_contador_aforo' INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'cfg_tb_contador_aforo' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj cfg_tb_contador_aforo_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sim_1/new/contadortb.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'tb_contador_aforo' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_aforo_behav xil_defaultlib.cfg_tb_contador_aforo -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot cfg_tb_contador_aforo_behav 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "cfg_tb_contador_aforo_behav -key {Behavioral:sim_1:Functional:cfg_tb_contador_aforo} -tclbatch {cfg_tb_contador_aforo.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Tcl Message: Time resolution is 1 ps 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 97 MB. Current time: 6/28/22, 1:08:49 PM CEST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source cfg_tb_contador_aforo.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'cfg_tb_contador_aforo_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1135.160 ; gain = 0.000 
+// 'd' command handler elapsed time: 12 seconds
+dismissDialog("Run Simulation"); // e
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 33 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 98 MB. Current time: 6/28/22, 1:09:30 PM CEST
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 23 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - cfg_tb_contador_aforo", "DesignTask.SIMULATION");
+// A (cs): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cs):  Close : addNotify
+// TclEventType: WAVEFORM_CLOSE_WCFG
+dismissDialog("Confirm Close"); // A
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// WARNING: HEventQueue.dispatchEvent() is taking  1101 ms.
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bz
+// Elapsed time: 11 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, cfg_tb_contador_aforo(tb_contador_aforo - tb) (contadortb.vhd)]", 30); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, cfg_tb_controlaforo(tb_controlaforo - tb) (control_aforo_tb.vhd)]", 32, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ak
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ak
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ak
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ak
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // an
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top cfg_tb_controlaforo [get_filesets sim_1] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top_lib xil_defaultlib [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // o
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // o
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // an
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cs):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'cfg_tb_controlaforo' INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'cfg_tb_controlaforo' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj cfg_tb_controlaforo_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_controlaforo_behav xil_defaultlib.cfg_tb_controlaforo -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Vivado Simulator v2021.1 Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_controlaforo_behav xil_defaultlib.cfg_tb_controlaforo -log elaborate.log  Using 2 slave threads. Starting static elaboration Completed static elaboration INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "cfg_tb_controlaforo_behav -key {Behavioral:sim_1:Functional:cfg_tb_controlaforo} -tclbatch {cfg_tb_controlaforo.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: source cfg_tb_controlaforo.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// [GUI Memory]: 159 MB (+12kb) [00:10:12]
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 103 MB. Current time: 6/28/22, 1:10:48 PM CEST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'cfg_tb_controlaforo_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1135.160 ; gain = 0.000 
+// 'd' command handler elapsed time: 9 seconds
+dismissDialog("Run Simulation"); // e
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 103 MB. Current time: 6/28/22, 1:10:52 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 103 MB. Current time: 6/28/22, 1:10:54 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, C_IN[3:0]]", 2); // j
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, C_IN[3:0]]", 2); // j
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 103 MB. Current time: 6/28/22, 1:10:58 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 103 MB. Current time: 6/28/22, 1:11:00 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 102 MB. Current time: 6/28/22, 1:11:02 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 103 MB. Current time: 6/28/22, 1:11:03 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 102 MB. Current time: 6/28/22, 1:11:03 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 5"); // w
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - cfg_tb_controlaforo", "DesignTask.SIMULATION");
+// A (cs): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cs):  Close : addNotify
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+dismissDialog("Confirm Close"); // A
+// WARNING: HEventQueue.dispatchEvent() is taking  1029 ms.
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bz
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1179 ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3375408 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 148 MB. Current time: 6/28/22, 2:09:01 PM CEST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3376336 ms. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 93 MB. Current time: 6/28/22, 2:39:01 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/28/22, 3:09:01 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 91 MB. Current time: 6/28/22, 3:39:01 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/28/22, 4:09:02 PM CEST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1196 ms. Increasing delay to 3588 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/28/22, 4:39:02 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/28/22, 5:09:04 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/28/22, 5:39:04 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/28/22, 6:09:04 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/28/22, 6:39:04 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/28/22, 7:09:04 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/28/22, 7:39:05 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/28/22, 8:09:05 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/28/22, 8:39:05 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 91 MB. Current time: 6/28/22, 9:09:06 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/28/22, 9:39:06 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 91 MB. Current time: 6/28/22, 10:09:07 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 91 MB. Current time: 6/28/22, 10:39:07 PM CEST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1739 ms. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 91 MB. Current time: 6/28/22, 11:09:07 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/28/22, 11:39:08 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 12:09:08 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 91 MB. Current time: 6/29/22, 12:39:09 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 1:09:09 AM CEST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2113 ms. Increasing delay to 5000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 1:39:09 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 2:09:10 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 2:39:10 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 3:09:10 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 3:39:11 AM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  10798748 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2557 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 6:59:07 AM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  12462542 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1021 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  16922 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 91 MB. Current time: 6/29/22, 10:27:10 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 10:56:56 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 11:26:56 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 91 MB. Current time: 6/29/22, 11:56:56 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 12:26:57 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 91 MB. Current time: 6/29/22, 12:56:57 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 1:26:58 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 91 MB. Current time: 6/29/22, 1:56:58 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 91 MB. Current time: 6/29/22, 2:26:58 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 91 MB. Current time: 6/29/22, 2:56:59 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 3:26:59 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 3:57:00 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 4:27:00 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 91 MB. Current time: 6/29/22, 4:57:01 PM CEST
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1021 ms to process. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 5:27:01 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 5:57:01 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 6:27:02 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 6:57:02 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 7:27:02 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 7:57:03 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 8:27:03 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 8:57:03 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 9:27:04 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 91 MB. Current time: 6/29/22, 9:57:04 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 10:27:04 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 10:57:05 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 11:27:05 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/29/22, 11:57:05 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/30/22, 12:27:06 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/30/22, 12:57:06 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/30/22, 1:27:07 AM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  10798646 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1260 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/30/22, 4:40:28 AM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  34164249 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12750 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/30/22, 2:10:13 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  5870 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5876 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5877 ms. Increasing delay to 17631 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 23 ms. Decreasing delay to 2023 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/30/22, 2:40:00 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/30/22, 3:10:01 PM CEST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1022 ms. Increasing delay to 3066 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/30/22, 3:40:01 PM CEST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1924 ms. Increasing delay to 5772 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/30/22, 4:10:02 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/30/22, 4:40:02 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/30/22, 5:10:02 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 92 MB. Current time: 6/30/22, 5:40:03 PM CEST

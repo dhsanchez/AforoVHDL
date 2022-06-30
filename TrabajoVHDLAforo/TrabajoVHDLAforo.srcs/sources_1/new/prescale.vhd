@@ -33,11 +33,8 @@ architecture Behavioral of prescale is
 signal temporal: STD_LOGIC;
 signal counter : integer range 0 to 4999 := 0;
 begin
-process (RESET, CLK_IN) begin
-    if (RESET = '0') then
-        temporal <= '0';
-        counter <= 0;
-    elsif rising_edge(CLK_IN) then
+process (CLK_IN) begin
+    if rising_edge(CLK_IN) then
         if (counter = 4999) then
             temporal <= NOT(temporal);
             counter <= 0;

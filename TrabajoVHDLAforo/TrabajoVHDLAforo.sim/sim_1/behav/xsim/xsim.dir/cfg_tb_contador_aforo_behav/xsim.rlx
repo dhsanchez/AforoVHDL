@@ -1,6 +1,6 @@
 
 { 
-    crc :  3635646963202848088  , 
+    crc :  5844041836794735197  , 
     ccp_crc :  0  , 
     cmdline : " -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_aforo_behav xil_defaultlib.cfg_tb_contador_aforo" , 
     buildDate : "Jun 10 2021" , 

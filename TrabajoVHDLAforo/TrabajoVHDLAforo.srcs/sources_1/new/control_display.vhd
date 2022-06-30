@@ -58,47 +58,47 @@ signal disp7: std_logic_vector(6 downto 0);
 signal disp8: std_logic_vector(6 downto 0);
 
 signal flag : integer := 1;
-signal libre_1: positive:= 9-TO_INTEGER(signed(CUENTA));
-signal libre_2: positive:= 9-TO_INTEGER(signed(CUENTA2));
-signal cuenta_1: positive:= TO_INTEGER(signed(CUENTA));
-signal cuenta_2: positive:= TO_INTEGER(signed(CUENTA2));
+--signal libre_1: std_logic_vector(WIDTH-1 downto 0) :=CUENTA;-- 9-TO_INTEGER(unsigned(CUENTA));
+--signal libre_2: std_logic_vector(WIDTH-1 downto 0) :=CUENTA2; --9-TO_INTEGER(unsigned(CUENTA2));
+--signal cuenta_1: integer:= TO_INTEGER(unsigned(CUENTA));
+--signal cuenta_2: integer:= TO_INTEGER(unsigned(CUENTA2));
 --Señales de plazas libres
     COMPONENT decoder
        PORT (
-              code : positive:= 0; 
+              code : in std_logic_vector(3 DOWNTO 0);
               led : OUT std_logic_vector(6 DOWNTO 0)
        );
    END COMPONENT;
 
 begin
 declibre: decoder 
-port map (code =>10,
+port map (code =>"1010",
     led=>disp1
     );
 decocupado: decoder 
-port map (code =>11,
+port map (code =>"1011",
     led=>disp5
     );
 decguion:decoder 
-port map (code =>12,
+port map (code =>"1100",
     led=>disp2
     );
 decguion2:decoder 
-port map (code =>12,
+port map (code =>"1100",
     led=>disp6
     );
 deccuenta1: decoder 
-port map (code => cuenta_1,
+port map (code => CUENTA,
     led=>disp8); 
 deccuenta2: decoder 
-port map (code => cuenta_2,
+port map (code => CUENTA2,
     led=>disp7); 
 libres1: decoder 
 port map (
-    code => libre_1,
+    code => CUENTA,
     led=>disp4);
 libres2: decoder 
-port map (code => libre_2,
+port map (code => CUENTA2,
     led=>disp3); 
 
     process (CLK)

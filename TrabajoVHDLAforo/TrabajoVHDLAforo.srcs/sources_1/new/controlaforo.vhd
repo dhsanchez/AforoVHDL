@@ -52,7 +52,7 @@ generic (
         LED_GEL1: out std_logic; -- LED que avisa de que se ha terminado el gel
         LED_GEL2:out std_logic; -- LED que avisa de que se ha terminado el gel
         LED_ALARMA: out std_logic; -- LED avisando de que el local esta lleno    
-        LED_ERROR: out std_logic_vector(1 downto 0);-- LED que avisa de que han intentado entrar mas gente de la que se puede
+        LED_ERROR: out std_logic;-- LED que avisa de que han intentado entrar mas gente de la que se puede
         LED_ERROR1: out std_logic; --error en el control bote de gel 1
         LED_ERROR2:out std_logic --error en el control bote de gel 2
 
@@ -80,7 +80,7 @@ end component;
 --declaracion del decoder
 component decoder
     PORT ( 
-        code : positive := 0; 
+        code : in integer := 0; 
         led  : OUT std_logic_vector(6 DOWNTO 0) 
     ); 
     end component;
@@ -277,7 +277,7 @@ cuentaaforo: contador_aforo
            RESET  => RESET,
            COUNT => cuenta,
            COUNT2 => cuenta2,
-           ERROR =>ERROR,
+           ERROR =>LED_ERROR,
            FULL => FULL
            );
 contadorbote1: contador_bote

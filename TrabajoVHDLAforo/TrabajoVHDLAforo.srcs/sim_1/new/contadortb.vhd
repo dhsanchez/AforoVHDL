@@ -33,7 +33,8 @@ architecture tb of tb_contador_aforo is
               C_IN    : in std_logic_vector (3 downto 0);
               CLK     : in std_logic;
               RESET   : in std_logic;
-              COUNT   : out positive := 0;
+             COUNT : out std_logic_vector(3 downto 0);
+             COUNT2 : out std_logic_vector(3 downto 0);
               FULL    : out std_logic);
     end component;
 
@@ -43,7 +44,8 @@ architecture tb of tb_contador_aforo is
     signal C_IN    : std_logic_vector (3 downto 0);
     signal CLK     : std_logic;
     signal RESET   : std_logic;
-    signal COUNT    : positive;
+    signal COUNT    : std_logic_vector(3 downto 0);
+    signal COUNT2    :  std_logic_vector(3 downto 0);
     signal FULL    : std_logic;
 
     constant TbPeriod : time := 50 ns; -- EDIT Put right period here
@@ -59,7 +61,8 @@ begin
               C_IN    => C_IN,
               CLK     => CLK,
               RESET   => RESET,
-              COUNT   => COUNT, 
+              COUNT   => COUNT,
+              COUNT2=> COUNT2, 
               FULL    => FULL);
 
     -- Clock generation
@@ -89,13 +92,13 @@ begin
         wait for 1 * TbPeriod;
         C_EN<='0';
         S_ENTRADA<='1';
-        wait for 5 * TbPeriod;
+        wait for 200 * TbPeriod;
         S_ENTRADA<='0';
         S_SALIDA<='1';
         wait for 1 * TbPeriod;
         C_EN<='1';
         C_IN<="1111";
-        wait  for 5*TbPeriod;
+        wait  for 1000*TbPeriod;
         -- Stop the clock and hence terminate the simulation
         TbSimEnded <= '1';
         wait;
