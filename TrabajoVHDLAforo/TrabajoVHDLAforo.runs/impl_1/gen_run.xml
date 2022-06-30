@@ -17,6 +17,7 @@
   <File Type="BITSTR-MMI" Name="controlaforo.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="controlaforo_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-SYSDEF" Name="controlaforo.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="controlaforo_methodology_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="controlaforo.ltx"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
@@ -48,7 +49,6 @@
   <File Type="PHYSOPT-DCP" Name="controlaforo_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="controlaforo_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="controlaforo_postroute_physopt_bb.dcp"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="controlaforo_methodology_drc_routed.pb"/>
   <File Type="ROUTE-DRC-RPX" Name="controlaforo_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="controlaforo_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="controlaforo.pdi"/>
@@ -59,13 +59,13 @@
   <File Type="RBD_FILE" Name="controlaforo.rbd"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd">
+    <File Path="$PPRDIR/../../../../../Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd">
+    <File Path="$PPRDIR/../../../../../Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -89,7 +89,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd">
+    <File Path="$PPRDIR/../../../../../Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -121,7 +121,7 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../TresEnRaya/Nexys-4-DDR-Master.xdc">
+    <File Path="$PPRDIR/../../../../../TresEnRaya/Nexys-4-DDR-Master.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

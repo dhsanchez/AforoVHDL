@@ -275,8 +275,8 @@ cuentaaforo: contador_aforo
            C_IN => C_IN,
            CLK   => CLK_10kHz,
            RESET  => RESET,
-           COUNT => cuenta,
-           COUNT2 => cuenta2,
+           COUNT => CUENTA,
+           COUNT2 => CUENTA2,
            ERROR =>LED_ERROR,
            FULL => FULL
            );
@@ -315,8 +315,8 @@ port map (RESET=> RESET,
 --INSTANCIAS DEL BLOQUE DE SALIDAS
 display: control_display 
 port map ( CLK =>CLK_10kHz,
-       CUENTA=>cuenta,
-       CUENTA2=>cuenta2,
+       CUENTA=>CUENTA,
+       CUENTA2=>CUENTA2,
        refrescar_anodo => refrescar_anodo,
         salida_disp =>salida_disp
         );

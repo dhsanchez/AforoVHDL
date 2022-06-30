@@ -62,6 +62,15 @@ signal flag : integer := 1;
 --signal libre_2: std_logic_vector(WIDTH-1 downto 0) :=CUENTA2; --9-TO_INTEGER(unsigned(CUENTA2));
 --signal cuenta_1: integer:= TO_INTEGER(unsigned(CUENTA));
 --signal cuenta_2: integer:= TO_INTEGER(unsigned(CUENTA2));
+signal libre1_i: integer;
+signal libre2_i: integer;
+signal libre1_e: unsigned(CUENTA'range);
+signal libre2_e: unsigned(CUENTA2'range);
+signal libre1_o: unsigned(CUENTA'range);
+signal libre2_o: unsigned(CUENTA2'range);
+
+signal libre1: std_logic_vector(WIDTH-1 downto 0);
+signal libre2: std_logic_vector(WIDTH-1 downto 0);
 --Señales de plazas libres
     COMPONENT decoder
        PORT (
@@ -71,38 +80,51 @@ signal flag : integer := 1;
    END COMPONENT;
 
 begin
+
 declibre: decoder 
 port map (code =>"1010",
-    led=>disp1
+    led=>disp8
     );
 decocupado: decoder 
 port map (code =>"1011",
-    led=>disp5
+    led=>disp4
     );
 decguion:decoder 
 port map (code =>"1100",
-    led=>disp2
+    led=>disp3
     );
 decguion2:decoder 
 port map (code =>"1100",
-    led=>disp6
+    led=>disp7
     );
 deccuenta1: decoder 
 port map (code => CUENTA,
-    led=>disp8); 
+    led=>disp1); 
 deccuenta2: decoder 
 port map (code => CUENTA2,
-    led=>disp7); 
+    led=>disp2); 
 libres1: decoder 
 port map (
-    code => CUENTA,
-    led=>disp4);
+    code =>libre1 ,
+    led=>disp5);
 libres2: decoder 
-port map (code => CUENTA2,
-    led=>disp3); 
+port map (code =>libre2 ,
+    led=>disp6); 
 
     process (CLK)
     begin
+    --PASAMOS DE VECTOR A UNSIGNED
+        libre1_e<=unsigned(CUENTA);
+        libre1_e<=unsigned(CUENTA2);
+    --RESTAMOS 9-CUENTA
+        libre1_i<=9 -TO_INTEGER(libre1_e);
+        libre2_i<=9 - TO_INTEGER(libre2_e);
+    --VOLVEMOS A PASAR A UNSIGNED
+        libre1_o<=to_unsigned(libre1_i,libre1_o'length);
+        libre2_o<=to_unsigned(libre2_i,libre2_o'length);
+    --VOLVEMOS A PASAR A VECTOR
+        libre1<=std_logic_vector(libre1_o);
+        libre2<=std_logic_vector(libre1_o);
         if rising_edge(CLK) then
             if flag=1 then
                 refrescar_anodo(0) <=  '0';

@@ -4,4 +4,23 @@ Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 77caf6140b
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.SYNCHRNZR [synchrnzr_default]
+Compiling architecture behavioral of entity xil_defaultlib.EDGEDTCTR [edgedtctr_default]
+Compiling architecture behavioral of entity xil_defaultlib.prescale [prescale_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_aforo [contador_aforo_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_bote [contador_bote_default]
+Compiling architecture behavioral of entity xil_defaultlib.maquina_botes [maquina_botes_default]
+Compiling architecture dataflow of entity xil_defaultlib.decoder [decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.control_display [control_display_default]
+Compiling architecture behavioral of entity xil_defaultlib.controlaforo [controlaforo_default]
+Compiling architecture tb of entity xil_defaultlib.tb_controlaforo [tb_controlaforo]
+Built simulation snapshot cfg_tb_controlaforo_behav

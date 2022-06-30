@@ -1,12 +1,12 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"../../../../../Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd" \
-"../../../../../Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd" \
+"../../../../../../../../../Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd" \
+"../../../../../../../../../Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd" \
 "../../../../TrabajoVHDLAforo.srcs/sources_1/new/contador_aforo.vhd" \
 "../../../../TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd" \
 "../../../../TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd" \
 "../../../../TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd" \
-"../../../../../Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd" \
+"../../../../../../../../../Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd" \
 "../../../../TrabajoVHDLAforo.srcs/sources_1/new/maquina_botes.vhd" \
 "../../../../TrabajoVHDLAforo.srcs/sources_1/new/prescale.vhd" \
 "../../../../TrabajoVHDLAforo.srcs/sim_1/new/control_aforo_tb.vhd" \

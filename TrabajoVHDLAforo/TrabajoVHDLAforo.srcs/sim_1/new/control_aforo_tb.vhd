@@ -84,7 +84,7 @@ architecture tb of tb_controlaforo is
     signal LED_ERROR1      : std_logic;
     signal LED_ERROR2      : std_logic;
 
-    constant TbPeriod : time := 50 ns; -- EDIT Put right period here
+    constant TbPeriod : time := 10 ns; -- EDIT Put right period here
     signal TbClock : std_logic := '0';
     signal TbSimEnded : std_logic := '0';
 
