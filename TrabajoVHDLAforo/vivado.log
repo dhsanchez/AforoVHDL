@@ -2,44 +2,380 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Fri Jul  1 16:33:34 2022
-# Process ID: 2783296
-# Current directory: C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2784088 C:\Users\dsanc\OneDrive\Documentos\GitHub\AforoVHDL\TrabajoVHDLAforo\TrabajoVHDLAforo.xpr
-# Log file: C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo/vivado.log
-# Journal file: C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo\vivado.jou
+# Start of session at: Fri Jul  8 12:00:06 2022
+# Process ID: 113672
+# Current directory: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent119888 C:\Users\dsanc\Desktop\AforoVHDL-main\TrabajoVHDLAforo\TrabajoVHDLAforo.xpr
+# Log file: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/vivado.log
+# Journal file: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo/TrabajoVHDLAforo.xpr
-WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo/TrabajoVHDLAforo.gen/sources_1'.
+open_project C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
-open_project: Time (s): cpu = 00:00:51 ; elapsed = 00:00:24 . Memory (MB): peak = 1121.844 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1120.195 ; gain = 0.000
 update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul  8 12:03:22 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1/runme.log
+[Fri Jul  8 12:03:22 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2021.1
+  **** Build date : Jun 10 2021 at 20:17:23
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.1
+  ****** Build date   : May 26 2021-19:32:33
+    **** Build number : 2021.1.1622050353
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1120.195 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FE63A
+open_hw_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2734.223 ; gain = 1614.027
+set_property PROGRAM.FILE {C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/controlaforo.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/controlaforo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul  8 12:09:06 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1/runme.log
+[Fri Jul  8 12:09:07 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2021.1
+  **** Build date : Jun 10 2021 at 20:17:23
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.1
+  ****** Build date   : May 26 2021-19:32:33
+    **** Build number : 2021.1.1622050353
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 2790.352 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FE63A
+set_property PROGRAM.FILE {C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/controlaforo.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/controlaforo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul  8 12:35:39 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1/runme.log
+[Fri Jul  8 12:35:39 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2021.1
+  **** Build date : Jun 10 2021 at 20:17:23
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.1
+  ****** Build date   : May 26 2021-19:32:33
+    **** Build number : 2021.1.1622050353
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 2799.859 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FE63A
+set_property PROGRAM.FILE {C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/controlaforo.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/controlaforo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/controlaforo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul  8 13:01:42 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1/runme.log
+[Fri Jul  8 13:01:42 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2021.1
+  **** Build date : Jun 10 2021 at 20:17:23
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.1
+  ****** Build date   : May 26 2021-19:32:33
+    **** Build number : 2021.1.1622050353
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 2804.211 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FE63A
+set_property PROGRAM.FILE {C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/controlaforo.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/controlaforo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/controlaforo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul  8 13:09:18 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1/runme.log
+[Fri Jul  8 13:09:18 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul  8 13:12:17 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1/runme.log
+[Fri Jul  8 13:12:17 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/controlaforo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/controlaforo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1
+
+close_hw_manager
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul  8 13:21:20 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1/runme.log
+[Fri Jul  8 13:21:20 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2021.1
+  **** Build date : Jun 10 2021 at 20:17:23
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.1
+  ****** Build date   : May 26 2021-19:32:33
+    **** Build number : 2021.1.1622050353
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2805.355 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FE63A
+set_property PROGRAM.FILE {C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/controlaforo.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/controlaforo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A3FE63A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FE63A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul  8 17:04:34 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1/runme.log
+[Fri Jul  8 17:04:34 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/controlaforo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul  8 17:14:34 2022] Launched synth_1...
+Run output will be captured here: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1/runme.log
+[Fri Jul  8 17:14:34 2022] Launched impl_1...
+Run output will be captured here: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2021.1
+  **** Build date : Jun 10 2021 at 20:17:23
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.1
+  ****** Build date   : May 26 2021-19:32:33
+    **** Build number : 2021.1.1622050353
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 2815.945 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FE63A
+set_property PROGRAM.FILE {C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/controlaforo.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/controlaforo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
 launch_simulation
 Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'cfg_tb_controlaforo'
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-12493] Simulation top is 'cfg_tb_contador_bote'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'cfg_tb_controlaforo' in fileset 'sim_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'cfg_tb_contador_bote' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj cfg_tb_controlaforo_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'controlaforo'
-INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj cfg_tb_contador_bote_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'contador_bote'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
-"xelab -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_controlaforo_behav xil_defaultlib.cfg_tb_controlaforo -log elaborate.log"
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+"xelab -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_bote_behav xil_defaultlib.cfg_tb_contador_bote -log elaborate.log"
 Vivado Simulator v2021.1
 Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_controlaforo_behav xil_defaultlib.cfg_tb_controlaforo -log elaborate.log 
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_bote_behav xil_defaultlib.cfg_tb_contador_bote -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -52,26 +388,28 @@ Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
-Compiling architecture behavioral of entity xil_defaultlib.SYNCHRNZR [synchrnzr_default]
-Compiling architecture behavioral of entity xil_defaultlib.EDGEDTCTR [edgedtctr_default]
-Compiling architecture behavioral of entity xil_defaultlib.prescale [prescale_default]
-Compiling architecture behavioral of entity xil_defaultlib.contador_aforo [contador_aforo_default]
 Compiling architecture behavioral of entity xil_defaultlib.contador_bote [contador_bote_default]
-Compiling architecture behavioral of entity xil_defaultlib.maquina_botes [maquina_botes_default]
-Compiling architecture dataflow of entity xil_defaultlib.decoder [decoder_default]
-Compiling architecture behavioral of entity xil_defaultlib.control_display [control_display_default]
-Compiling architecture behavioral of entity xil_defaultlib.controlaforo [controlaforo_default]
-Compiling architecture tb of entity xil_defaultlib.tb_controlaforo [tb_controlaforo]
-Built simulation snapshot cfg_tb_controlaforo_behav
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1121.844 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+Compiling architecture tb of entity xil_defaultlib.tb_contador_bote [tb_contador_bote]
+Built simulation snapshot cfg_tb_contador_bote_behav
+
+****** Webtalk v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim/xsim.dir/cfg_tb_contador_bote_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim/xsim.dir/cfg_tb_contador_bote_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jul  8 17:22:34 2022. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2021.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 86.297 ; gain = 4.555
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul  8 17:22:34 2022...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 2818.203 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '19' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "cfg_tb_controlaforo_behav -key {Behavioral:sim_1:Functional:cfg_tb_controlaforo} -tclbatch {cfg_tb_controlaforo.tcl} -log {simulate.log}"
+   with args "cfg_tb_contador_bote_behav -key {Behavioral:sim_1:Functional:cfg_tb_contador_bote} -tclbatch {cfg_tb_contador_bote.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Time resolution is 1 ps
-source cfg_tb_controlaforo.tcl
+source cfg_tb_contador_bote.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -82,11 +420,576 @@ source cfg_tb_controlaforo.tcl
 #   }
 # }
 # run 1000ns
-xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1121.844 ; gain = 0.000
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'cfg_tb_controlaforo_behav' loaded.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cfg_tb_contador_bote_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 1121.844 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:29 . Memory (MB): peak = 2828.172 ; gain = 9.969
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 2904.340 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cfg_tb_contador_bote'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cfg_tb_contador_bote' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj cfg_tb_contador_bote_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'contador_bote'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+"xelab -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_bote_behav xil_defaultlib.cfg_tb_contador_bote -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_bote_behav xil_defaultlib.cfg_tb_contador_bote -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.contador_bote [contador_bote_default]
+Compiling architecture tb of entity xil_defaultlib.tb_contador_bote [tb_contador_bote]
+Built simulation snapshot cfg_tb_contador_bote_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cfg_tb_contador_bote_behav -key {Behavioral:sim_1:Functional:cfg_tb_contador_bote} -tclbatch {cfg_tb_contador_bote.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cfg_tb_contador_bote.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cfg_tb_contador_bote_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 2904.340 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cfg_tb_contador_bote'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cfg_tb_contador_bote' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj cfg_tb_contador_bote_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sim_1/new/contador_bote_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_contador_bote'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+"xelab -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_bote_behav xil_defaultlib.cfg_tb_contador_bote -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_bote_behav xil_defaultlib.cfg_tb_contador_bote -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.contador_bote [contador_bote_default]
+Compiling architecture tb of entity xil_defaultlib.tb_contador_bote [tb_contador_bote]
+Built simulation snapshot cfg_tb_contador_bote_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cfg_tb_contador_bote_behav -key {Behavioral:sim_1:Functional:cfg_tb_contador_bote} -tclbatch {cfg_tb_contador_bote.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cfg_tb_contador_bote.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cfg_tb_contador_bote_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 2909.434 ; gain = 5.094
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cfg_tb_contador_bote'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cfg_tb_contador_bote' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj cfg_tb_contador_bote_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sim_1/new/contador_bote_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_contador_bote'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+"xelab -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_bote_behav xil_defaultlib.cfg_tb_contador_bote -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_bote_behav xil_defaultlib.cfg_tb_contador_bote -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.contador_bote [contador_bote_default]
+Compiling architecture tb of entity xil_defaultlib.tb_contador_bote [tb_contador_bote]
+Built simulation snapshot cfg_tb_contador_bote_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cfg_tb_contador_bote_behav -key {Behavioral:sim_1:Functional:cfg_tb_contador_bote} -tclbatch {cfg_tb_contador_bote.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cfg_tb_contador_bote.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cfg_tb_contador_bote_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2911.340 ; gain = 1.133
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cfg_tb_contador_bote'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cfg_tb_contador_bote' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj cfg_tb_contador_bote_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'contador_bote'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+"xelab -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_bote_behav xil_defaultlib.cfg_tb_contador_bote -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_bote_behav xil_defaultlib.cfg_tb_contador_bote -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.contador_bote [contador_bote_default]
+Compiling architecture tb of entity xil_defaultlib.tb_contador_bote [tb_contador_bote]
+Built simulation snapshot cfg_tb_contador_bote_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cfg_tb_contador_bote_behav -key {Behavioral:sim_1:Functional:cfg_tb_contador_bote} -tclbatch {cfg_tb_contador_bote.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cfg_tb_contador_bote.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cfg_tb_contador_bote_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 2911.922 ; gain = 0.434
+close_sim
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Simtcl 6-16] Simulation closed
+INFO: [Common 17-344] 'close_sim' was cancelled
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cfg_tb_contador_bote'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cfg_tb_contador_bote' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj cfg_tb_contador_bote_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'contador_bote'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+"xelab -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_bote_behav xil_defaultlib.cfg_tb_contador_bote -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_bote_behav xil_defaultlib.cfg_tb_contador_bote -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.contador_bote [contador_bote_default]
+Compiling architecture tb of entity xil_defaultlib.tb_contador_bote [tb_contador_bote]
+Built simulation snapshot cfg_tb_contador_bote_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cfg_tb_contador_bote_behav -key {Behavioral:sim_1:Functional:cfg_tb_contador_bote} -tclbatch {cfg_tb_contador_bote.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cfg_tb_contador_bote.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cfg_tb_contador_bote_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 2911.945 ; gain = 0.023
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cfg_tb_contador_bote'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cfg_tb_contador_bote' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj cfg_tb_contador_bote_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'contador_bote'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+"xelab -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_bote_behav xil_defaultlib.cfg_tb_contador_bote -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_bote_behav xil_defaultlib.cfg_tb_contador_bote -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.contador_bote [contador_bote_default]
+Compiling architecture tb of entity xil_defaultlib.tb_contador_bote [tb_contador_bote]
+Built simulation snapshot cfg_tb_contador_bote_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cfg_tb_contador_bote_behav -key {Behavioral:sim_1:Functional:cfg_tb_contador_bote} -tclbatch {cfg_tb_contador_bote.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cfg_tb_contador_bote.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cfg_tb_contador_bote_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 2911.945 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cfg_tb_contador_bote'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cfg_tb_contador_bote' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj cfg_tb_contador_bote_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'contador_bote'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+"xelab -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_bote_behav xil_defaultlib.cfg_tb_contador_bote -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_bote_behav xil_defaultlib.cfg_tb_contador_bote -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.contador_bote [contador_bote_default]
+Compiling architecture tb of entity xil_defaultlib.tb_contador_bote [tb_contador_bote]
+Built simulation snapshot cfg_tb_contador_bote_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cfg_tb_contador_bote_behav -key {Behavioral:sim_1:Functional:cfg_tb_contador_bote} -tclbatch {cfg_tb_contador_bote.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cfg_tb_contador_bote.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cfg_tb_contador_bote_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2912.531 ; gain = 0.023
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cfg_tb_contador_bote'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cfg_tb_contador_bote' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj cfg_tb_contador_bote_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'contador_bote'
+ERROR: [VRFC 10-4982] syntax error near 'process' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd:60]
+ERROR: [VRFC 10-4982] syntax error near 'begin' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd:62]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd:45]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cfg_tb_contador_bote'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cfg_tb_contador_bote' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj cfg_tb_contador_bote_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'contador_bote'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+"xelab -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_bote_behav xil_defaultlib.cfg_tb_contador_bote -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_bote_behav xil_defaultlib.cfg_tb_contador_bote -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.contador_bote [contador_bote_default]
+Compiling architecture tb of entity xil_defaultlib.tb_contador_bote [tb_contador_bote]
+Built simulation snapshot cfg_tb_contador_bote_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cfg_tb_contador_bote_behav -key {Behavioral:sim_1:Functional:cfg_tb_contador_bote} -tclbatch {cfg_tb_contador_bote.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cfg_tb_contador_bote.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cfg_tb_contador_bote_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 2912.672 ; gain = 0.141
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cfg_tb_contador_bote'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cfg_tb_contador_bote' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj cfg_tb_contador_bote_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sim_1/new/contador_bote_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_contador_bote'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+"xelab -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_bote_behav xil_defaultlib.cfg_tb_contador_bote -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 77caf6140b714021b595b284422ea139 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot cfg_tb_contador_bote_behav xil_defaultlib.cfg_tb_contador_bote -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.contador_bote [contador_bote_default]
+Compiling architecture tb of entity xil_defaultlib.tb_contador_bote [tb_contador_bote]
+Built simulation snapshot cfg_tb_contador_bote_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cfg_tb_contador_bote_behav -key {Behavioral:sim_1:Functional:cfg_tb_contador_bote} -tclbatch {cfg_tb_contador_bote.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cfg_tb_contador_bote.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cfg_tb_contador_bote_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2913.625 ; gain = 0.566
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [Common 17-9] Error reading message records.
+WARNING: [Common 17-9] Error reading message records.
+WARNING: [Common 17-9] Error reading message records.
+WARNING: [Common 17-9] Error reading message records.
+reset_run impl_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Couldn't access process for termination
+
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri Jul  1 17:53:54 2022...
+INFO: [Common 17-206] Exiting Vivado at Sat Jul  9 19:35:22 2022...

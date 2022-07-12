@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date             : Tue Jun 28 12:33:44 2022
+| Date             : Sun Jul 10 18:38:53 2022
 | Host             : LAPTOP-MVFJNUAM running 64-bit major release  (build 9200)
 | Command          : report_power -file controlaforo_power_routed.rpt -pb controlaforo_power_summary_routed.pb -rpx controlaforo_power_routed.rpx
 | Design           : controlaforo
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.574        |
+| Total On-Chip Power (W)  | 3.218        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.472        |
-| Device Static (W)        | 0.102        |
+| Dynamic (W)              | 3.108        |
+| Device Static (W)        | 0.110        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 77.8         |
-| Junction Temperature (C) | 32.2         |
+| Max Ambient (C)          | 70.3         |
+| Junction Temperature (C) | 39.7         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,18 +52,18 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Slice Logic             |     0.619 |      341 |       --- |             --- |
-|   LUT as Logic          |     0.551 |       97 |     63400 |            0.15 |
-|   Register              |     0.024 |      145 |    126800 |            0.11 |
-|   LUT as Shift Register |     0.018 |        9 |     19000 |            0.05 |
-|   CARRY4                |     0.011 |       19 |     15850 |            0.12 |
-|   F7/F8 Muxes           |     0.009 |        4 |     63400 |           <0.01 |
+| Slice Logic             |     0.695 |      298 |       --- |             --- |
+|   LUT as Logic          |     0.624 |      105 |     63400 |            0.17 |
+|   Register              |     0.024 |      113 |    126800 |            0.09 |
+|   F7/F8 Muxes           |     0.017 |        6 |     63400 |           <0.01 |
+|   LUT as Shift Register |     0.014 |        7 |     19000 |            0.04 |
+|   CARRY4                |     0.010 |        3 |     15850 |            0.02 |
 |   BUFG                  |     0.006 |        2 |        32 |            6.25 |
-|   Others                |     0.000 |       49 |       --- |             --- |
-| Signals                 |     0.517 |      257 |       --- |             --- |
-| I/O                     |     0.336 |       36 |       210 |           17.14 |
-| Static Power            |     0.102 |          |           |                 |
-| Total                   |     1.574 |          |           |                 |
+|   Others                |     0.000 |       38 |       --- |             --- |
+| Signals                 |     0.551 |      200 |       --- |             --- |
+| I/O                     |     1.862 |       37 |       210 |           17.62 |
+| Static Power            |     0.110 |          |           |                 |
+| Total                   |     3.218 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,9 +73,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     1.211 |       1.191 |      0.019 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.029 |       0.010 |      0.019 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.083 |       0.079 |      0.004 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     1.332 |       1.306 |      0.026 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.085 |       0.066 |      0.019 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.514 |       0.510 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -140,31 +140,29 @@ Table of Contents
 +--------------------+-----------+
 | Name               | Power (W) |
 +--------------------+-----------+
-| controlaforo       |     1.472 |
+| controlaforo       |     3.108 |
 |   ABOTE1Edge       |     0.012 |
-|   ABOTE1Sync       |     0.003 |
-|   ABOTE2Edge       |     0.009 |
+|   ABOTE1Sync       |     0.004 |
+|   ABOTE2Edge       |     0.012 |
 |   ABOTE2Sync       |     0.004 |
-|   Botevacio1Sync   |     0.003 |
-|   Botevacio2Sync   |     0.004 |
-|   CENsync          |     0.004 |
-|   EntradaEdge      |     0.012 |
-|   EntradaSync      |     0.003 |
+|   EntradaEdge      |     0.013 |
+|   EntradaSync      |     0.004 |
+|   MEdge            |     0.013 |
 |   Rearme1Sync      |     0.004 |
 |   Rearme2Sync      |     0.004 |
-|   SalidaEdge       |     0.015 |
-|   SalidaSync       |     0.004 |
-|   botevacio1Edge   |     0.014 |
-|   botevacio2Edge   |     0.010 |
-|   c_enedge         |     0.019 |
-|   contadorbote1    |     0.001 |
-|   contadorbote2    |     0.009 |
-|   cuentaaforo      |     0.458 |
-|   display          |     0.313 |
-|   maquinabote1     |     0.004 |
-|   preescaler_10khz |     0.112 |
-|   rearme1edge      |     0.018 |
-|   rearme2edge      |     0.028 |
+|   SalidaEdge       |     0.009 |
+|   SalidaSync       |     0.003 |
+|   contadorbote1    |     0.016 |
+|   contadorbote2    |     0.013 |
+|   cuentaaforo      |     0.390 |
+|   display          |     0.483 |
+|   mSync            |     0.004 |
+|   maq_estados      |     0.010 |
+|   maquinabote1     |     0.015 |
+|   maquinabote2     |     0.014 |
+|   preescaler_10khz |     0.110 |
+|   rearme1edge      |     0.014 |
+|   rearme2edge      |     0.015 |
 +--------------------+-----------+
 
 

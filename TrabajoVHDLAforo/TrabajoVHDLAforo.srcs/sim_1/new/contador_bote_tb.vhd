@@ -30,6 +30,7 @@ architecture tb of tb_contador_bote is
               REARME : in std_logic;
               CLK    : in std_logic;
               RESET  : in std_logic;
+              COUT   : out std_logic_vector (3 downto 0);
               SALIDA : out std_logic);
     end component;
 
@@ -37,6 +38,7 @@ architecture tb of tb_contador_bote is
     signal REARME : std_logic;
     signal CLK    : std_logic;
     signal RESET  : std_logic;
+    signal COUT   : std_logic_vector (3 downto 0);
     signal SALIDA : std_logic;
 
     constant TbPeriod : time := 10 ns; -- EDIT Put right period here
@@ -50,6 +52,7 @@ begin
               REARME => REARME,
               CLK    => CLK,
               RESET  => RESET,
+              COUT   => COUT,
               SALIDA => SALIDA);
 
     -- Clock generation
@@ -66,10 +69,10 @@ begin
 
         -- Reset generation
         -- EDIT: Check that RESET is really your reset signal
-        RESET <= '1';
-        wait for 10 ns;
         RESET <= '0';
-        wait for 10 ns;
+        wait for 100 ns;
+        RESET <= '1';
+        wait for 100 ns;
 
         -- EDIT Add stimuli here
         wait for 20 ns;
@@ -81,7 +84,14 @@ begin
         REARME<='0';
         SENSOR<='1';
         wait for 100 ns;
+        RESET<='0';
+        wait for 100 ns;
+        RESET<='1';
+        wait for 100 ns;
         REARME<='1';
+        wait for 100 ns;
+        REARME<='0';
+        wait for 100 ns;
         wait for  1000*TbPeriod;
 
         -- Stop the clock and hence terminate the simulation
@@ -96,4 +106,4 @@ end tb;
 configuration cfg_tb_contador_bote of tb_contador_bote is
     for tb
     end for;
-end cfg_tb_contador_bote; 
+end cfg_tb_contador_bote;

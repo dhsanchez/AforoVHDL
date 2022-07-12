@@ -34,6 +34,7 @@ generic (
     WIDTH : positive := 4 
 );
   Port (S_ENTRADA: in std_logic; --sensor de entrada
+        S_MODO: in std_logic; --sensor de modo
         S_SALIDA: in std_logic; -- sensor a la salida del local
         S_BOTE1: in std_logic; -- sensor que detecta el bote vacío
         S_BOTE2: in std_logic; -- sensor que detecta el bote vacío
@@ -96,6 +97,7 @@ component contador_bote
           REARME: in std_logic;
           CLK: in std_logic; 
           RESET:in std_logic;
+          COUT: out std_logic_vector(3 downto 0);
           SALIDA: out std_logic);
 end component;
 --declaracion de la maquina de estados de cada bote
@@ -120,33 +122,48 @@ end component;
 --declaracion del control del display
 component control_display 
     port(
-        CLK : in std_logic;
-       CUENTA: in  std_logic_vector(WIDTH-1 downto 0);
+        CLK,RESET: in std_logic;
+       CUENTA,C1,C2: in  std_logic_vector(WIDTH-1 downto 0);
        CUENTA2: in  std_logic_vector(WIDTH-1 downto 0);
+       LED: in  std_logic_vector(1 downto 0);
         refrescar_anodo : out std_logic_vector(7 downto 0); --vector que pone a 1 el ánodo correspondiente para actualizar
         salida_disp : out std_logic_vector(6 downto 0) --salida de los displays
         
         );
 end component;
-
+component fsm
+port(
+RESET : in std_logic;
+ CLK : in std_logic;
+ PUSHBUTTON : in std_logic;
+ LIGHT : out std_logic_vector(1 downto 0)
+ );
+ end component;
 --SEÑALES INTERMEDIAS ENTRADAS
 signal ENTRADA_SYNC : std_logic;
+signal MODO_SYNC : std_logic;
 signal SALIDA_SYNC: std_logic;
 signal REARME1_SYNC: std_logic;
 signal REARME2_SYNC: std_logic;
+signal ABOTE1_SYNC: std_logic;
+signal ABOTE2_SYNC: std_logic;
 signal ENTRADA_EDGE : std_logic;
 signal SALIDA_EDGE: std_logic;
 signal REARME1_EDGE: std_logic;
 signal REARME2_EDGE: std_logic;
+signal ABOTE1_EDGE: std_logic;
+signal ABOTE2_EDGE: std_logic;
+signal MODO_EDGE : std_logic;
 signal CLK_10kHz: std_logic;
-
 --SEÑALES INTERMEDIAS PROGRAMA
 signal CUENTA: std_logic_vector(WIDTH-1 downto 0);
 signal CUENTA2: std_logic_vector(WIDTH-1 downto 0);
+signal C1, C2: std_logic_vector(WIDTH-1 downto 0);
 signal FULL: std_logic; 
 signal ERROR: std_logic; 
-signal CONTADOR1: std_logic; 
-signal CONTADOR2: std_logic;
+signal CONTADOR1: std_logic:= '0'; 
+signal CONTADOR2: std_logic:= '0';
+signal luz: std_logic_vector(1 downto 0);
 begin
 --Instancias de los componentes
 
@@ -156,6 +173,11 @@ EntradaSync: SYNCHRNZR
         CLK =>CLK,
         ASYNC_IN=>S_ENTRADA,
         SYNC_OUT=>ENTRADA_SYNC);
+mSync: SYNCHRNZR
+    port map (
+        CLK =>CLK,
+        ASYNC_IN=>S_MODO,
+        SYNC_OUT=>MODO_SYNC);
 SalidaSync: SYNCHRNZR
     port map (
         CLK =>CLK,
@@ -171,11 +193,26 @@ Rearme2Sync: SYNCHRNZR
         CLK =>CLK,
         ASYNC_IN=>REARME2,
         SYNC_OUT=>REARME2_SYNC);
+ABOTE1Sync: SYNCHRNZR
+    port map (
+        CLK =>CLK,
+        ASYNC_IN=>A_BOTE1,
+        SYNC_OUT=>ABOTE1_SYNC);
+ABOTE2Sync: SYNCHRNZR
+    port map (
+        CLK =>CLK,
+        ASYNC_IN=>A_BOTE2,
+        SYNC_OUT=>ABOTE2_SYNC);
 EntradaEdge: EDGEDTCTR
     port map(CLK => CLK,
         SYNC_IN => ENTRADA_SYNC,
         EDGE => ENTRADA_EDGE
-    );        
+    );    
+MEdge: EDGEDTCTR
+    port map(CLK => CLK,
+        SYNC_IN => MODO_SYNC,
+        EDGE => MODO_EDGE
+    );       
 SalidaEdge: EDGEDTCTR
     port map(CLK => CLK,
         SYNC_IN => SALIDA_SYNC,
@@ -191,6 +228,16 @@ rearme2edge:EDGEDTCTR
         SYNC_IN => REARME2_SYNC,
         EDGE => REARME2_EDGE
     ); 
+ABOTE1Edge: EDGEDTCTR
+    port map(CLK => CLK,
+        SYNC_IN => ABOTE1_SYNC,
+        EDGE => ABOTE1_EDGE
+    );  
+ABOTE2Edge: EDGEDTCTR
+    port map(CLK => CLK,
+        SYNC_IN => ABOTE2_SYNC,
+        EDGE => ABOTE2_EDGE
+    );  
 preescaler_10khz : prescale
     port map(
         CLK_IN => CLK,
@@ -212,17 +259,19 @@ cuentaaforo: contador_aforo
            FULL => FULL
            );
 contadorbote1: contador_bote
-port map(SENSOR =>A_BOTE1,
+port map(SENSOR =>ABOTE1_EDGE,
           REARME=> REARME1_EDGE,
           CLK=>CLK,  
           RESET =>RESET,
+          COUT=>C1,
           SALIDA=>CONTADOR1
           );
 contadorbote2: contador_bote
-port map(SENSOR =>A_BOTE2,
+port map(SENSOR =>ABOTE2_EDGE,
           REARME=> REARME2_EDGE,
           CLK=>CLK,  
           RESET =>RESET,
+          COUT=>C2,
           SALIDA=>CONTADOR2
           );     
 maquinabote1: maquina_botes
@@ -243,10 +292,19 @@ port map (RESET=> RESET,
            ERROR=> LED_ERROR2,
            led_alarma=> LED_GEL2
            );
+ maq_estados:fsm
+ port map(RESET=>RESET,
+            CLK=>CLK,
+            PUSHBUTTON=>MODO_EDGE,
+            LIGHT=>luz);
 --INSTANCIAS DEL BLOQUE DE SALIDAS
 display: control_display 
-port map ( CLK =>CLK,
+port map ( CLK =>CLK_10kHz,
+        RESET=>RESET,
        CUENTA=>CUENTA,
+       C1=>C1,
+       C2=>C2,
+       LED=>luz,
        CUENTA2=>CUENTA2,
        refrescar_anodo => refrescar_anodo,
         salida_disp =>salida_disp

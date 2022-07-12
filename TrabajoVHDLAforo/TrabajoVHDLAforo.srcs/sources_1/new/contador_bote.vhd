@@ -18,10 +18,11 @@
 -- 
 ----------------------------------------------------------------------------------
 
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+use IEEE.NUMERIC_STD.all;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -36,22 +37,25 @@ entity contador_bote is
           REARME: in std_logic;
           CLK: in std_logic; 
           RESET:in std_logic;
+          COUT: out std_logic_vector(3 downto 0);
           SALIDA: out std_logic);
     
 end contador_bote;
 
 architecture Behavioral of contador_bote is
-signal cuenta: integer:= 0;
-constant maximo: positive:= 10;
-signal salida_i: std_logic;
+signal cuenta: std_logic_vector(3 downto 0):="0000";
+signal salida_i: std_logic:='0';
 begin
-process(CLK,RESET)
+process(CLK,RESET,REARME)
 begin
-    if (RESET= '1' or REARME='1') then
-    cuenta<=0;
-    elsif(rising_edge(CLK))then
-        if(SENSOR='1' and cuenta/=maximo) then
-            cuenta<=cuenta+1;
+    if (RESET= '0') then
+    cuenta<="0000";
+    end if;
+    if(rising_edge(CLK))then
+        if(SENSOR='1' and cuenta/="1010") then
+            cuenta<=cuenta+'1';
+        elsif(REARME='1') then
+            cuenta<="0000";
         else
             cuenta<=cuenta;
         end if;
@@ -59,7 +63,7 @@ begin
  end process;
  gestion_salida:process(cuenta)
  begin
-    if (cuenta=maximo) then
+    if (cuenta="1010") then
         salida_i<='1';
         
     else
@@ -67,5 +71,5 @@ begin
     end if;
  end process;
  SALIDA<=salida_i;
-
+ COUT<=cuenta;
 end Behavioral;

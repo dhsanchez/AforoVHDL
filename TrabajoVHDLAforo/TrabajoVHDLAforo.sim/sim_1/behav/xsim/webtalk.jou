@@ -2,11 +2,11 @@
 # Webtalk v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Thu Jun 30 20:15:09 2022
-# Process ID: 2627224
-# Current directory: C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim/xsim.dir/cfg_tb_controlaforo_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim\webtalk.jou
+# Start of session at: Sat Jul  9 20:00:13 2022
+# Process ID: 288404
+# Current directory: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim/xsim.dir/cfg_tb_maquina_botes_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim/xsim.dir/cfg_tb_controlaforo_behav/webtalk/xsim_webtalk.tcl -notrace
+source C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.sim/sim_1/behav/xsim/xsim.dir/cfg_tb_maquina_botes_behav/webtalk/xsim_webtalk.tcl -notrace

@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1/controlaforo.tcl"
+  variable script "C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1/controlaforo.tcl"
   variable category "vivado_synth"
 }
 
@@ -79,25 +79,26 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.cache/wt [current_project]
-set_property parent.project_path C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.cache/wt [current_project]
+set_property parent.project_path C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
-set_property ip_output_repo c:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.cache/ip [current_project]
+set_property ip_output_repo c:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo/TrabajoVHDLAforo.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
   C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd
   C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd
-  C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_aforo.vhd
-  C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd
-  C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd
+  C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_aforo.vhd
+  C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd
+  C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd
   C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd
-  C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/maquina_botes.vhd
-  C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/prescale.vhd
-  C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd
+  C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/maqestados.vhd
+  C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/maquina_botes.vhd
+  C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/prescale.vhd
+  C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

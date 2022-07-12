@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Tue Jun 28 12:33:06 2022
+| Date         : Sun Jul 10 18:37:50 2022
 | Host         : LAPTOP-MVFJNUAM running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file controlaforo_control_sets_placed.rpt
 | Design       : controlaforo
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    10 |
-|    Minimum number of control sets                        |    10 |
+| Total control sets                                       |    15 |
+|    Minimum number of control sets                        |    15 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    31 |
+| Unused register locations in slices containing registers |    55 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    10 |
-| >= 0 to < 4        |     2 |
-| >= 4 to < 6        |     3 |
+| Total control sets |    15 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     7 |
 | >= 6 to < 8        |     0 |
-| >= 8 to < 10       |     0 |
+| >= 8 to < 10       |     1 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     1 |
-| >= 14 to < 16      |     0 |
-| >= 16              |     4 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     2 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,31 +58,36 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              54 |           30 |
-| No           | No                    | Yes                    |               4 |            2 |
-| No           | Yes                   | No                     |              14 |            4 |
-| Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              72 |           19 |
-| Yes          | Yes                   | No                     |               1 |            1 |
+| No           | No                    | No                     |              46 |           28 |
+| No           | No                    | Yes                    |               8 |            4 |
+| No           | Yes                   | No                     |              24 |            9 |
+| Yes          | No                    | No                     |              15 |            5 |
+| Yes          | No                    | Yes                    |               8 |            4 |
+| Yes          | Yes                   | No                     |              12 |            4 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+-----------------+------------------------------------+------------------------------------+------------------+----------------+--------------+
-|   Clock Signal  |            Enable Signal           |          Set/Reset Signal          | Slice Load Count | Bel Load Count | Bels / Slice |
-+-----------------+------------------------------------+------------------------------------+------------------+----------------+--------------+
-|  CLK_10kHz_BUFG | EntradaEdge/ERROR_i0               | SalidaEdge/sreg_reg[1]_0           |                1 |              1 |         1.00 |
-|  CLK_10kHz_BUFG |                                    | display/refrescar_anodo[7]_i_1_n_0 |                1 |              2 |         2.00 |
-|  CLK_10kHz_BUFG |                                    | RESET_IBUF                         |                2 |              4 |         2.00 |
-|  CLK_10kHz_BUFG | cuentaaforo/numero2                | RESET_IBUF                         |                1 |              4 |         4.00 |
-|  CLK_10kHz_BUFG | cuentaaforo/numero[3]_i_1_n_0      | RESET_IBUF                         |                2 |              4 |         2.00 |
-|  CLK_IBUF_BUFG  |                                    | preescaler_10khz/temporal          |                3 |             12 |         4.00 |
-|  CLK_10kHz_BUFG |                                    |                                    |                9 |             16 |         1.78 |
-|  CLK_10kHz_BUFG | contadorbote2/cuenta[0]_i_1__0_n_0 | rearme2edge/sreg_reg[1]_1          |                8 |             32 |         4.00 |
-|  CLK_10kHz_BUFG | ABOTE1Edge/sreg_reg[0]_0           | rearme1edge/sreg_reg[1]_0          |                8 |             32 |         4.00 |
-|  CLK_IBUF_BUFG  |                                    |                                    |               21 |             47 |         2.24 |
-+-----------------+------------------------------------+------------------------------------+------------------+----------------+--------------+
++-----------------+-----------------------------------------------+------------------------------------+------------------+----------------+--------------+
+|   Clock Signal  |                 Enable Signal                 |          Set/Reset Signal          | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------+-----------------------------------------------+------------------------------------+------------------+----------------+--------------+
+|  CLK_10kHz_BUFG |                                               | display/refrescar_anodo[6]_i_1_n_0 |                1 |              1 |         1.00 |
+|  CLK_10kHz_BUFG |                                               | display/refrescar_anodo[5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  CLK_10kHz_BUFG |                                               | display/flag[2]                    |                1 |              2 |         2.00 |
+|  CLK_10kHz_BUFG |                                               | contadorbote2/SR[0]                |                1 |              4 |         4.00 |
+|  CLK_10kHz_BUFG |                                               | contadorbote1/SR[0]                |                2 |              4 |         2.00 |
+|  CLK_10kHz_BUFG | maq_estados/FSM_onehot_current_state_reg[2]_0 | display/salida2[6]_i_1_n_0         |                2 |              4 |         2.00 |
+|  CLK_IBUF_BUFG  | ABOTE2Edge/E[0]                               | ABOTE2Edge/SR[0]                   |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG  | ABOTE1Edge/E[0]                               | ABOTE1Edge/SR[0]                   |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG  | EntradaEdge/sreg_reg[1]_0                     | cuentaaforo/RESET                  |                2 |              4 |         2.00 |
+|  CLK_IBUF_BUFG  | cuentaaforo/numero[3]_i_1_n_0                 | cuentaaforo/RESET                  |                2 |              4 |         2.00 |
+|  CLK_IBUF_BUFG  |                                               | cuentaaforo/RESET                  |                4 |              8 |         2.00 |
+|  CLK_IBUF_BUFG  |                                               | preescaler_10khz/temporal          |                3 |             12 |         4.00 |
+|  CLK_10kHz_BUFG | maq_estados/FSM_onehot_current_state_reg[2]_0 |                                    |                5 |             15 |         3.00 |
+|  CLK_10kHz_BUFG |                                               |                                    |               11 |             16 |         1.45 |
+|  CLK_IBUF_BUFG  |                                               |                                    |               17 |             37 |         2.18 |
++-----------------+-----------------------------------------------+------------------------------------+------------------+----------------+--------------+
 
 

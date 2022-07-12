@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Jul  6 15:28:18 2022
+# Process ID: 14052
+# Current directory: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13920 C:\Users\dsanc\Desktop\AforoVHDL-main\TrabajoVHDLAforo\TrabajoVHDLAforo.xpr
+# Log file: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/vivado.log
+# Journal file: C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source cfg_tb_controlaforo.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cfg_tb_maquina_botes [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source cfg_tb_maquina_botes.tcl
+close_sim
+launch_simulation
+source cfg_tb_maquina_botes.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cfg_tb_contador_bote [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source cfg_tb_contador_bote.tcl
+close_sim
+launch_simulation
+source cfg_tb_contador_bote.tcl
+close_sim
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/controlaforo.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager

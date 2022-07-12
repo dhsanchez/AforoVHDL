@@ -49,42 +49,51 @@ architecture Behavioral of contador_aforo is
 begin
 process(CLK,RESET)
 begin
-    if (RESET= '1') then
+    if (RESET= '0') then
     numero<="0000";
     numero2<="0000";
     FULL_i<= '0';
+    ERROR_i<='0';
     elsif(rising_edge(CLK))then
     
         if(C_EN='1')then
             numero<= C_IN;
         else
-            if (S_ENTRADA='1')then
-             if(numero= "1001" and numero2="1001")then
+        if (S_ENTRADA='1')then
+            if(numero= "1001" and numero2="1001")then
                 ERROR_i<='1';
+             elsif (numero="1001" and numero2/="1001") then
+                numero2 <= numero2+1;
+                numero<="0000";
              else
-                numero <= numero+1;
+                numero<=numero+1;
              end if;
-            end if;
-            if (S_SALIDA ='1')then
-              if(numero= "1001" and numero2="1001")then
+        end if;
+ 
+        if (S_SALIDA ='1')then
+            if(ERROR_i='1')then 
                 ERROR_i<='0';
-              end if;
+            end if;
+            if(numero="0000" and numero2/="0000")then
+                numero2<=numero2-1;
+                numero<="1001";
+              elsif(numero="0000" and numero2="0000") then
+              numero<=numero;
+              numero2<=numero2;
+              else 
                 numero<=numero-1;
+            end if;
+            end if;
             end if;
         end if;
         
         if(numero= "1001" and numero2="1001")then
             full_i<= '1';
-        elsif(numero= "1010")then
-            numero<="0001";
-            numero2<=numero2+1;
         else
             full_i<= '0';
         end if;
-        
-    end if;
-FULL <=full_i;   
-ERROR<=ERROR_i; 
+    FULL <=full_i;   
+    ERROR<=ERROR_i; 
 end process;
 COUNT<=numero;
 COUNT2<=numero2;

@@ -73,9 +73,9 @@ begin
 
         -- Reset generation
         -- EDIT: Check that RESET is really your reset signal
-        RESET <= '1';
-        wait for 100 ns;
         RESET <= '0';
+        wait for 100 ns;
+        RESET <= '1';
         wait for 100 ns;
 
         -- EDIT Add stimuli here
@@ -94,7 +94,18 @@ begin
         SENSOR<='0';
         REARME<='1';
         wait for 100 ns;
-        REARME<='1';
+        REARME<='0';
+        CONTADOR<='1';
+        wait for 100 ns;
+        RESET<='0';
+        wait for 100 ns;
+        RESET<='1';
+        wait for 100 ns;
+         REARME<='1';
+        wait for 100 ns;
+       CONTADOR<='0';
+        wait for 100 ns;
+        
         SENSOR<='1';
         wait for 1000 * TbPeriod;
 

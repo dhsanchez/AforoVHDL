@@ -10,6 +10,7 @@
     ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 
 source controlaforo.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1122.625 ; gain = 0.000
 Command: synth_design -top controlaforo -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
@@ -17,77 +18,91 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 2120524
+INFO: [Synth 8-7075] Helper process launched with PID 455624
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1134.824 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1122.625 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'controlaforo' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:62]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'EntradaSync' of component 'SYNCHRNZR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'controlaforo' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:61]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'EntradaSync' of component 'SYNCHRNZR' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:171]
 INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:12]
 INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (1#1) [C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:12]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'SalidaSync' of component 'SYNCHRNZR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:178]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Botevacio1Sync' of component 'SYNCHRNZR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:183]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Botevacio2Sync' of component 'SYNCHRNZR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:188]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'ABOTE1Sync' of component 'SYNCHRNZR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:193]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'ABOTE2Sync' of component 'SYNCHRNZR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:198]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Rearme1Sync' of component 'SYNCHRNZR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:203]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Rearme2Sync' of component 'SYNCHRNZR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:208]
-INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'CENsync' of component 'SYNCHRNZR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:213]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'EntradaEdge' of component 'EDGEDTCTR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:218]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'mSync' of component 'SYNCHRNZR' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:176]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'SalidaSync' of component 'SYNCHRNZR' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:181]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Rearme1Sync' of component 'SYNCHRNZR' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:186]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Rearme2Sync' of component 'SYNCHRNZR' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:191]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'ABOTE1Sync' of component 'SYNCHRNZR' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:196]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'ABOTE2Sync' of component 'SYNCHRNZR' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:201]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'EntradaEdge' of component 'EDGEDTCTR' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:206]
 INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:12]
 INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (2#1) [C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:12]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'SalidaEdge' of component 'EDGEDTCTR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:223]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'botevacio1Edge' of component 'EDGEDTCTR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:228]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'botevacio2Edge' of component 'EDGEDTCTR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:233]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'ABOTE1Edge' of component 'EDGEDTCTR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:238]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'ABOTE2Edge' of component 'EDGEDTCTR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:243]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'rearme1edge' of component 'EDGEDTCTR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:248]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'rearme2edge' of component 'EDGEDTCTR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:253]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'c_enedge' of component 'EDGEDTCTR' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:258]
-INFO: [Synth 8-3491] module 'prescale' declared at 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/prescale.vhd:23' bound to instance 'preescaler_10khz' of component 'prescale' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:263]
-INFO: [Synth 8-638] synthesizing module 'prescale' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/prescale.vhd:32]
-INFO: [Synth 8-256] done synthesizing module 'prescale' (3#1) [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/prescale.vhd:32]
-INFO: [Synth 8-3491] module 'contador_aforo' declared at 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_aforo.vhd:27' bound to instance 'cuentaaforo' of component 'contador_aforo' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:271]
-INFO: [Synth 8-638] synthesizing module 'contador_aforo' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_aforo.vhd:44]
-WARNING: [Synth 8-614] signal 'FULL_i' is read in the process but is not in the sensitivity list [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_aforo.vhd:50]
-WARNING: [Synth 8-614] signal 'ERROR_i' is read in the process but is not in the sensitivity list [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_aforo.vhd:50]
-INFO: [Synth 8-256] done synthesizing module 'contador_aforo' (4#1) [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_aforo.vhd:44]
-INFO: [Synth 8-3491] module 'contador_bote' declared at 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd:34' bound to instance 'contadorbote1' of component 'contador_bote' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:283]
-INFO: [Synth 8-638] synthesizing module 'contador_bote' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd:43]
-WARNING: [Synth 8-614] signal 'REARME' is read in the process but is not in the sensitivity list [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'contador_bote' (5#1) [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd:43]
-INFO: [Synth 8-3491] module 'contador_bote' declared at 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd:34' bound to instance 'contadorbote2' of component 'contador_bote' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:290]
-INFO: [Synth 8-3491] module 'maquina_botes' declared at 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/maquina_botes.vhd:26' bound to instance 'maquinabote1' of component 'maquina_botes' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:297]
-INFO: [Synth 8-638] synthesizing module 'maquina_botes' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/maquina_botes.vhd:37]
-INFO: [Synth 8-256] done synthesizing module 'maquina_botes' (6#1) [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/maquina_botes.vhd:37]
-INFO: [Synth 8-3491] module 'maquina_botes' declared at 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/maquina_botes.vhd:26' bound to instance 'maquinabote2' of component 'maquina_botes' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:306]
-INFO: [Synth 8-3491] module 'control_display' declared at 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:34' bound to instance 'display' of component 'control_display' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:316]
-INFO: [Synth 8-638] synthesizing module 'control_display' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:48]
-INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'declibre' of component 'decoder' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:74]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'MEdge' of component 'EDGEDTCTR' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:211]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'SalidaEdge' of component 'EDGEDTCTR' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:216]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'rearme1edge' of component 'EDGEDTCTR' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:221]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'rearme2edge' of component 'EDGEDTCTR' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:226]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'ABOTE1Edge' of component 'EDGEDTCTR' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:231]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'ABOTE2Edge' of component 'EDGEDTCTR' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:236]
+INFO: [Synth 8-3491] module 'prescale' declared at 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/prescale.vhd:23' bound to instance 'preescaler_10khz' of component 'prescale' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:241]
+INFO: [Synth 8-638] synthesizing module 'prescale' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/prescale.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'prescale' (3#1) [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/prescale.vhd:32]
+INFO: [Synth 8-3491] module 'contador_aforo' declared at 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_aforo.vhd:27' bound to instance 'cuentaaforo' of component 'contador_aforo' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:249]
+INFO: [Synth 8-638] synthesizing module 'contador_aforo' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_aforo.vhd:44]
+WARNING: [Synth 8-614] signal 'numero' is read in the process but is not in the sensitivity list [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_aforo.vhd:90]
+WARNING: [Synth 8-614] signal 'numero2' is read in the process but is not in the sensitivity list [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_aforo.vhd:90]
+WARNING: [Synth 8-614] signal 'FULL_i' is read in the process but is not in the sensitivity list [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_aforo.vhd:90]
+WARNING: [Synth 8-614] signal 'ERROR_i' is read in the process but is not in the sensitivity list [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_aforo.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'contador_aforo' (4#1) [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_aforo.vhd:44]
+INFO: [Synth 8-3491] module 'contador_bote' declared at 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd:35' bound to instance 'contadorbote1' of component 'contador_bote' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:261]
+INFO: [Synth 8-638] synthesizing module 'contador_bote' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'contador_bote' (5#1) [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd:45]
+INFO: [Synth 8-3491] module 'contador_bote' declared at 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/contador_bote.vhd:35' bound to instance 'contadorbote2' of component 'contador_bote' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:269]
+INFO: [Synth 8-3491] module 'maquina_botes' declared at 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/maquina_botes.vhd:26' bound to instance 'maquinabote1' of component 'maquina_botes' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:277]
+INFO: [Synth 8-638] synthesizing module 'maquina_botes' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/maquina_botes.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'maquina_botes' (6#1) [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/maquina_botes.vhd:37]
+INFO: [Synth 8-3491] module 'maquina_botes' declared at 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/maquina_botes.vhd:26' bound to instance 'maquinabote2' of component 'maquina_botes' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:286]
+INFO: [Synth 8-3491] module 'fsm' declared at 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/maqestados.vhd:32' bound to instance 'maq_estados' of component 'fsm' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:295]
+INFO: [Synth 8-638] synthesizing module 'fsm' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/maqestados.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'fsm' (7#1) [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/maqestados.vhd:40]
+INFO: [Synth 8-3491] module 'control_display' declared at 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:34' bound to instance 'display' of component 'control_display' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'control_display' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:49]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'dec1' of component 'decoder' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:117]
 INFO: [Synth 8-638] synthesizing module 'decoder' [C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'decoder' (7#1) [C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:13]
-INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'decocupado' of component 'decoder' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:78]
-INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'decguion' of component 'decoder' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:82]
-INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'decguion2' of component 'decoder' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:86]
-INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'deccuenta1' of component 'decoder' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:90]
-INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'deccuenta2' of component 'decoder' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:93]
-INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'libres1' of component 'decoder' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:96]
-INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'libres2' of component 'decoder' [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:100]
-INFO: [Synth 8-256] done synthesizing module 'control_display' (8#1) [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'controlaforo' (9#1) [C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'decoder' (8#1) [C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:13]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'decconta1' of component 'decoder' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:120]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'decconta11' of component 'decoder' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:123]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'dec2' of component 'decoder' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:127]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'decconta2' of component 'decoder' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:130]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'decconta22' of component 'decoder' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:133]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'declibre' of component 'decoder' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:137]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'decocupado' of component 'decoder' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:141]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'decguion' of component 'decoder' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:145]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'decguion2' of component 'decoder' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:149]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'deccuenta1' of component 'decoder' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:153]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'deccuenta2' of component 'decoder' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:156]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'libres1' of component 'decoder' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:159]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/dsanc/Desktop/UNI/Trabajo_Bitbucket/Parking_VHDL/Parking_VHDL.srcs/sources_1/new/decoder.vhd:6' bound to instance 'libres2' of component 'decoder' [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:163]
+WARNING: [Synth 8-614] signal 'CUENTA' is read in the process but is not in the sensitivity list [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:167]
+WARNING: [Synth 8-614] signal 'CUENTA2' is read in the process but is not in the sensitivity list [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:167]
+WARNING: [Synth 8-614] signal 'libre1_e' is read in the process but is not in the sensitivity list [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:167]
+WARNING: [Synth 8-614] signal 'libre2_e' is read in the process but is not in the sensitivity list [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:167]
+WARNING: [Synth 8-614] signal 'libre1_i' is read in the process but is not in the sensitivity list [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:167]
+WARNING: [Synth 8-614] signal 'libre2_i' is read in the process but is not in the sensitivity list [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:167]
+WARNING: [Synth 8-614] signal 'libre1_o' is read in the process but is not in the sensitivity list [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:167]
+WARNING: [Synth 8-614] signal 'libre2_o' is read in the process but is not in the sensitivity list [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'control_display' (9#1) [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/control_display.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'controlaforo' (10#1) [C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd:61]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1134.824 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1122.625 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1134.824 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1122.625 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1134.824 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1122.625 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1134.824 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1122.625 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -98,28 +113,29 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/controlaforo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1144.082 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1144.191 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1144.082 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1144.191 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1144.082 ; gain = 9.258
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1144.191 ; gain = 21.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1144.082 ; gain = 9.258
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1144.191 ; gain = 21.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1144.082 ; gain = 9.258
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1144.191 ; gain = 21.566
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'maquina_botes'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'fsm'
 INFO: [Synth 8-802] inferred FSM for state register 'flag_reg' in module 'control_display'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -129,6 +145,14 @@ INFO: [Synth 8-802] inferred FSM for state register 'flag_reg' in module 'contro
                       s2 |                               10 |                               10
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'maquina_botes'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                              001 |                               00
+                      s1 |                              010 |                               01
+                      s2 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'fsm'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -144,7 +168,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using e
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'flag_reg' using encoding 'sequential' in module 'control_display'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1144.082 ; gain = 9.258
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 1144.191 ; gain = 21.566
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'display/decguion' (decoder) to 'display/decguion2'
 ---------------------------------------------------------------------------------
@@ -153,27 +177,28 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input   13 Bit       Adders := 1     
-	   2 Input    5 Bit       Adders := 2     
-	   2 Input    4 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 7     
 +---Registers : 
 	               13 Bit    Registers := 1     
 	                8 Bit    Registers := 1     
-	                7 Bit    Registers := 1     
-	                4 Bit    Registers := 2     
-	                3 Bit    Registers := 9     
-	                2 Bit    Registers := 9     
-	                1 Bit    Registers := 12    
+	                7 Bit    Registers := 4     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 7     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 9     
 +---Muxes : 
 	   2 Input   13 Bit        Muxes := 1     
 	   8 Input    8 Bit        Muxes := 1     
-	   2 Input    7 Bit        Muxes := 7     
+	   2 Input    7 Bit        Muxes := 6     
 	   8 Input    7 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 3     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 6     
 	   8 Input    3 Bit        Muxes := 1     
 	   3 Input    2 Bit        Muxes := 2     
-	   2 Input    2 Bit        Muxes := 10    
-	   2 Input    1 Bit        Muxes := 14    
+	   2 Input    2 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 17    
 	   3 Input    1 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -190,25 +215,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1144.082 ; gain = 9.258
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1144.191 ; gain = 21.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1144.082 ; gain = 9.258
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 1144.191 ; gain = 21.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1144.082 ; gain = 9.258
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 1144.191 ; gain = 21.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1150.699 ; gain = 15.875
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 1152.629 ; gain = 30.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -226,56 +251,54 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1150.699 ; gain = 15.875
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1152.629 ; gain = 30.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1150.699 ; gain = 15.875
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1152.629 ; gain = 30.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1150.699 ; gain = 15.875
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1152.629 ; gain = 30.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1150.699 ; gain = 15.875
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1152.629 ; gain = 30.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1150.699 ; gain = 15.875
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:53 . Memory (MB): peak = 1152.629 ; gain = 30.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1150.699 ; gain = 15.875
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:53 . Memory (MB): peak = 1152.629 ; gain = 30.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 Static Shift Register Report:
-+-------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name  | RTL Name                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+-------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|controlaforo | EntradaEdge/sreg_reg[0]    | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
-|controlaforo | SalidaEdge/sreg_reg[0]     | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
-|controlaforo | botevacio1Edge/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
-|controlaforo | botevacio2Edge/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
-|controlaforo | ABOTE1Edge/sreg_reg[0]     | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
-|controlaforo | ABOTE2Edge/sreg_reg[0]     | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
-|controlaforo | rearme1edge/sreg_reg[0]    | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
-|controlaforo | rearme2edge/sreg_reg[0]    | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
-|controlaforo | c_enedge/sreg_reg[0]       | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
-+-------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
++-------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|controlaforo | EntradaEdge/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|controlaforo | MEdge/sreg_reg[0]       | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|controlaforo | SalidaEdge/sreg_reg[0]  | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|controlaforo | rearme1edge/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|controlaforo | rearme2edge/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|controlaforo | ABOTE1Edge/sreg_reg[0]  | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|controlaforo | ABOTE2Edge/sreg_reg[0]  | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
++-------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -295,43 +318,44 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     2|
-|2     |CARRY4 |    19|
-|3     |LUT1   |     6|
-|4     |LUT2   |    13|
-|5     |LUT3   |    16|
-|6     |LUT4   |    21|
-|7     |LUT5   |     9|
-|8     |LUT6   |    48|
-|9     |MUXF7  |     4|
-|10    |SRL16E |     9|
-|11    |FDCE   |    76|
-|12    |FDRE   |    67|
-|13    |FDSE   |     2|
-|14    |IBUF   |    15|
-|15    |OBUF   |    20|
-|16    |OBUFT  |     1|
+|2     |CARRY4 |     3|
+|3     |LUT1   |     9|
+|4     |LUT2   |    18|
+|5     |LUT3   |    14|
+|6     |LUT4   |    15|
+|7     |LUT5   |    20|
+|8     |LUT6   |    53|
+|9     |MUXF7  |     6|
+|10    |SRL16E |     7|
+|11    |FDCE   |    15|
+|12    |FDPE   |     1|
+|13    |FDRE   |    89|
+|14    |FDSE   |     8|
+|15    |IBUF   |    16|
+|16    |OBUF   |    20|
+|17    |OBUFT  |     1|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1150.699 ; gain = 15.875
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:53 . Memory (MB): peak = 1152.629 ; gain = 30.004
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 1150.699 ; gain = 6.617
-Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1150.699 ; gain = 15.875
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:48 . Memory (MB): peak = 1152.629 ; gain = 8.438
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:53 . Memory (MB): peak = 1152.629 ; gain = 30.004
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1161.055 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1162.898 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1173.797 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1174.895 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: efdc6acb
+Synth Design complete, checksum: 61adfe34
 INFO: [Common 17-83] Releasing license: Synthesis
-71 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+78 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1173.797 ; gain = 38.973
-INFO: [Common 17-1381] The checkpoint 'C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1/controlaforo.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:01:14 . Memory (MB): peak = 1174.895 ; gain = 52.270
+INFO: [Common 17-1381] The checkpoint 'C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1/controlaforo.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file controlaforo_utilization_synth.rpt -pb controlaforo_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jun 28 12:32:21 2022...
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 10 18:36:44 2022...

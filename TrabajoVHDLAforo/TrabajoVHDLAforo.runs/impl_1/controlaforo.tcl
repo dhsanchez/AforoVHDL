@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/controlaforo.tcl"
+  variable script "C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/impl_1/controlaforo.tcl"
   variable category "vivado_impl"
 }
 
@@ -132,13 +132,13 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.cache/wt [current_project]
-  set_property parent.project_path C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.xpr [current_project]
-  set_property ip_output_repo C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.cache/wt [current_project]
+  set_property parent.project_path C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.xpr [current_project]
+  set_property ip_output_repo C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo/TrabajoVHDLAforo.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/dsanc/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1/controlaforo.dcp
+  add_files -quiet C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.runs/synth_1/controlaforo.dcp
 OPTRACE "read constraints: implementation" START { }
   read_xdc C:/Users/dsanc/TresEnRaya/Nexys-4-DDR-Master.xdc
 OPTRACE "read constraints: implementation" END { }

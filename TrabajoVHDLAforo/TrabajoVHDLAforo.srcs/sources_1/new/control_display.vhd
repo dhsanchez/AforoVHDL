@@ -36,9 +36,10 @@ generic (
     WIDTH: positive:= 4
     );
     port(
-        CLK : in std_logic;
-       CUENTA: in  std_logic_vector(WIDTH-1 downto 0);
+        CLK,RESET : in std_logic;
+       CUENTA,C1,C2: in  std_logic_vector(WIDTH-1 downto 0);
        CUENTA2: in  std_logic_vector(WIDTH-1 downto 0);
+       LED: in std_logic_vector(1 downto 0);
         refrescar_anodo : out std_logic_vector(7 downto 0); --vector que pone a 1 el ánodo correspondiente para actualizar
         salida_disp : out std_logic_vector(6 downto 0) --salida de los displays
         
@@ -46,7 +47,6 @@ generic (
 end control_display;
 
 architecture Behavioral of control_display is
-
 --Señales auxiliares de cada uno de los displays
 signal disp1: std_logic_vector(6 downto 0);
 signal disp2: std_logic_vector(6 downto 0);
@@ -57,6 +57,11 @@ signal disp6: std_logic_vector(6 downto 0);
 signal disp7: std_logic_vector(6 downto 0);
 signal disp8: std_logic_vector(6 downto 0);
 
+signal aux1,aux4: std_logic_vector(6 downto 0);
+signal aux2,aux5: std_logic_vector(6 downto 0);
+signal aux3,aux6: std_logic_vector(6 downto 0);
+
+signal salida1,salida2,salida3: std_logic_vector(6 downto 0);
 signal flag : integer := 1;
 --signal libre_1: std_logic_vector(WIDTH-1 downto 0) :=CUENTA;-- 9-TO_INTEGER(unsigned(CUENTA));
 --signal libre_2: std_logic_vector(WIDTH-1 downto 0) :=CUENTA2; --9-TO_INTEGER(unsigned(CUENTA2));
@@ -68,7 +73,8 @@ signal libre1_e: unsigned(CUENTA'range);
 signal libre2_e: unsigned(CUENTA2'range);
 signal libre1_o: unsigned(CUENTA'range);
 signal libre2_o: unsigned(CUENTA2'range);
-
+signal C1_i,C11: std_logic_vector(C1'range);
+signal C2_i,C22: std_logic_vector(C2'range);
 signal libre1: std_logic_vector(WIDTH-1 downto 0);
 signal libre2: std_logic_vector(WIDTH-1 downto 0);
 --Señales de plazas libres
@@ -80,6 +86,53 @@ signal libre2: std_logic_vector(WIDTH-1 downto 0);
    END COMPONENT;
 
 begin
+
+conversion_2vectores: process (CLK, C1)
+begin
+    if(rising_edge(CLK)) then
+    if (C1="1010") then
+        C11<="0001";
+        C1_i<="0000";
+    else
+        C11<="0000";
+        C1_i<=C1;
+    end if;
+    end if;
+end process;
+conversion_2vectores2: process (CLK, C2)
+begin
+    if(rising_edge(CLK)) then
+    if (C2="1010") then
+        C22<="0001";
+        C2_i<="0000";
+    else
+        C22<="0000";
+        C2_i<=C2;
+    end if;
+    end if;
+end process;
+ 
+
+ -- DECODERS CONTADOR 1
+ dec1: decoder
+ port map (code=>"0001",
+ led=>aux1);
+ decconta1: decoder
+ port map (code=>C1_i,
+ led=>aux2);
+ decconta11: decoder
+port map (code=>C11,
+led=>aux3);
+--DECODERS CONTADOR 2
+dec2: decoder
+ port map (code=>"0010",
+ led=>aux4);
+ decconta2: decoder
+ port map (code=>C2_i,
+ led=>aux5);
+ decconta22: decoder
+port map (code=>C22,
+led=>aux6);
 
 declibre: decoder 
 port map (code =>"1010",
@@ -115,7 +168,7 @@ port map (code =>libre2 ,
     begin
     --PASAMOS DE VECTOR A UNSIGNED
         libre1_e<=unsigned(CUENTA);
-        libre1_e<=unsigned(CUENTA2);
+        libre2_e<=unsigned(CUENTA2);
     --RESTAMOS 9-CUENTA
         libre1_i<=9 -TO_INTEGER(libre1_e);
         libre2_i<=9 - TO_INTEGER(libre2_e);
@@ -124,8 +177,21 @@ port map (code =>libre2 ,
         libre2_o<=to_unsigned(libre2_i,libre2_o'length);
     --VOLVEMOS A PASAR A VECTOR
         libre1<=std_logic_vector(libre1_o);
-        libre2<=std_logic_vector(libre1_o);
+        libre2<=std_logic_vector(libre2_o);
         if rising_edge(CLK) then
+            if (LED="00") then
+                salida1<=disp5;
+                salida2<=disp6;
+                salida3<=disp8;
+            elsif (LED="01") then
+                salida1<=aux2;
+                salida2<=aux3;
+                salida3<=aux1;
+            elsif (LED="10")then
+                salida1<=aux5;
+                salida2<=aux6;
+                salida3<=aux4;
+            end if;    
             if flag=1 then
                 refrescar_anodo(0) <=  '0';
                 refrescar_anodo(7 downto 1) <=  "1111111";
@@ -157,14 +223,15 @@ port map (code =>libre2 ,
                 refrescar_anodo(4) <=  '0';
                 refrescar_anodo(3 downto 0) <=  "1111";
                 refrescar_anodo(7 downto 5) <=  "111";
-                salida_disp <= disp5;
+                salida_disp<=salida1;
+                
                 flag<=6;
             end if;
             if flag=6 then
                 refrescar_anodo(5) <=  '0';
                 refrescar_anodo(4 downto 0) <=  "11111";
                 refrescar_anodo(7 downto 6) <=  "11";
-                salida_disp <= disp6;
+                 salida_disp<=salida2;
                 flag<=7;
             end if;
             if flag=7 then
@@ -177,7 +244,7 @@ port map (code =>libre2 ,
             if flag=8 then
                 refrescar_anodo(7) <=  '0';
                 refrescar_anodo(6 downto 0) <=  "1111111";
-                salida_disp <= disp8;
+               salida_disp<= salida3;
                 flag<=1;
             end if;
         end if;

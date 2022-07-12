@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dsanc/OneDrive/Documentos/GitHub/AforoVHDL/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sources_1/new/controlaforo.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'controlaforo'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dsanc/Desktop/AforoVHDL-main/TrabajoVHDLAforo/TrabajoVHDLAforo.srcs/sim_1/new/maquina_botes_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_maquina_botes'

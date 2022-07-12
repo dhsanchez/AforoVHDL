@@ -140,8 +140,9 @@ begin
         wait for 100 ns;
 
         -- EDIT Add stimuli here
+       
         C_EN<='1';
-        C_IN<="0011";
+        C_IN<="1111";
         wait for 100 ns;
         S_ENTRADA<='1';
         wait for 500 ns;
@@ -149,11 +150,13 @@ begin
         wait for 100 ns;
         S_SALIDA<='1';
         wait for 100 ns;
+        
+       
         S_BOTE1<='1';
         wait for 100 ns;
         S_BOTE2<='1';
-        wait for 100 ns;
-        
+        wait for 200 ns;
+               
         wait for 10000 ns;
        
         wait for 100 * TbPeriod;
