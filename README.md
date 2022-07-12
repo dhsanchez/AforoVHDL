@@ -1,6 +1,8 @@
 # AforoVHDL
 Gestion Aforo de un Local
 
+Trabajo realizado por José Vicente Guillén Maínez, Juan Miguel Cabornero Pascual y Diego Herrera Sánchez.
+
 Con el, podremos controlar cuánta gente hay en el local hasta un máximo de 99 personas. En el momento que este se llene nos informara con un LED, además cuando alguien
 más intente entrar tendremos una señal de error. Podremos ver por un display tanto cuanta gente hay en el local y cuantas plazas quedan por llenar. 
 
